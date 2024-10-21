@@ -7,7 +7,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                {/* 예시로 몇 가지 페이지 추가 */}
+                {/* 예시로 몇df 가지 페이지 추가 */}
                 {/* <Route path="/" element={<HomePage />} /> */}
                 {/* <Route path="/main" element={<MainPage />} /> */}
             </Routes>
