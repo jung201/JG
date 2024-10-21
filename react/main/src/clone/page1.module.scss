@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 a,
@@ -18,3 +17,232 @@ li {
   list-style: none;
 }
 
+.main {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo_pic img {
+  width: 50%;
+  cursor: pointer;
+}
+
+.header .jlmToBtn {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.header .jlmToBtn button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+.scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+  background-color: white;
+}
+
+.menu {
+  width: 80%;
+}
+
+.menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  align-items: center;
+  text-align: center;
+}
+
+.menu li {
+  width: 18%;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.menu li:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+.mainBox {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 75%;
+}
+
+.section {
+  width: 100%;
+  height: 470px;
+  border-radius: 5px;
+  margin: 0px 0px 20px;
+  overflow: hidden;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.pic_slider {
+  display: flex;
+  width: 500%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pic_slider li {
+  width: 20%;
+}
+
+.pic_slider li img {
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+  background-size: cover;
+}
+
+.subPicComment {
+  font-size: 22px;
+  margin: 30px 0px 5px 0px;
+  font-weight: bold;
+}
+
+.sub {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.pic_container {
+  width: 24%;
+  position: relative;
+}
+
+.pic_list {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pic_list img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  background-size: cover;
+  position: absolute;
+  cursor: pointer;
+}
+
+.right {
+  width: 22%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: -10px 0px 5px 0px;
+}
+
+.pic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightPic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.rightPic img {
+  width: 40%;
+  height: 113px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.rightPic:hover img {
+  transform: scale(1.05);
+}
+
+.num {
+  width: 8%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(235, 35, 35);
+}
+
+.comment {
+  width: 52%;
+  font-size: 17px;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+.comment dt {
+  font-size: 16px;
+  margin: 3px 0px 5px 0px;
+}
+
+.comment dd {
+  font-size: 15px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.explain {
+  margin-top: 70px;
+}
