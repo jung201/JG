@@ -1,0 +1,206 @@
+/* join */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 전체 스타일 */
+
+.join {
+    display: flex;
+}
+
+.join .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 링크 색깔 */
+.join a {
+    color: rgb(16, 63, 134);
+}
+
+/* 메인 로고 */
+.join .joinLogo div.joinLogoPic {
+    cursor: pointer;
+    /* margin-top: 20px; */
+}
+
+.join .joinLogo div.joinLogoPic img {
+    width: 80%;
+}
+
+/* form 스타일 */
+.join form fieldset {
+    width: 500px;
+    border: none;
+}
+
+/* input 스타일 */
+.join form fieldset div.inputBox {
+    position: relative;
+    margin-top: 50px;
+}
+
+.join form fieldset div.inputBox input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #aaaaaa;
+    padding: 5px;
+    font-size: 16px;
+    color: #222;
+    outline: none;
+}
+
+/* 레이블 스타일 */
+.join form fieldset div.inputBox label {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+/* 레이블 효과 */
+.join form fieldset div.inputBox input:focus+label,
+.join form fieldset div.inputBox input:valid+label {
+    font-size: 16px;
+    bottom: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+/* span 강조선 스타일 */
+.join form fieldset div.inputBox span {
+    display: block;
+    position: absolute;
+    background-color: #706f6f;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+/* 스팬 효과 */
+.join form fieldset div.inputBox input:focus~span,
+.join form fieldset div.inputBox input:valid~span {
+    width: 100%;
+}
+
+/* 체크박스 스타일 */
+.join form fieldset div.inputCheck {
+    text-align: left;
+    position: relative;
+    margin-top: 50px;
+}
+
+/* 버튼 스타일 */
+.join form fieldset div.loginBtn button {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 44, 190);
+    color: white;
+    font-size: 20px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s
+}
+
+/* 버튼 스타일 후버 */
+.join form fieldset div.loginBtn button:hover {
+    background-color: rgb(0, 26, 111);
+}
+
+/* 버튼 아래 부분 */
+.join form fieldset div.inputLogin {
+    margin-top: 20px;
+}
+
+/* input 유효성 확인 멘트 스타일 */
+.join form fieldset div.warning {
+    margin-top: 5px;
+    color: rgb(230, 35, 35);
+}
+
+.join form fieldset div.inputBox .warning {
+    position: absolute;
+}
+
+/* 오른쪽 사진 */
+.right {
+    width: 47.2%;
+    display: flex;
+}
+
+.right img {
+    width: 100%;
+    height: 900px;
+}
+
+
+/* 미디어 쿼리 */
+/* 큰화면 데스크탑 (가로 해상도가 1500px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1500px) {
+    .join {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .join .left {
+        padding-left: 150px;
+    }
+
+}
+
+/* 데스크탑 (가로 해상도가 992px보다 크고 1299px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+
+    /* form 스타일 */
+    .join form fieldset {
+        width: 400px;
+    }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+    .join .left {
+        width: 100%;
+    }
+
+    .join .right {
+        width: 0%;
+        display: none;
+    }
+
+    /* form 스타일 */
+    .join form fieldset {
+        width: 450px;
+    }
+}

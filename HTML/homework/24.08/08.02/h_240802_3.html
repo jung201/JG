@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정규 사이트 목차</title>
+    <style>
+        fieldset {
+            width: 400px;
+            height: 100;
+            background-color: rgb(213, 224, 221);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .index {
+            counter-reset: index;
+            list-style-type: none;
+        }
+
+        .index_item {
+            list-style-type: none;
+        }
+
+        .index_item::before {
+            counter-increment: index;
+            content: counters(index, '.') '. ';
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h3>목차</h3>
+        <ol class="index">
+            <li class="index_item">역사</li>
+            <ol class="index">
+                <li class="index_item">개발</li>
+                <li class="index_item">최초 규격</li>
+                <li class="index_item">표준 버전의 역사</li>
+                <ol class="index">
+                    <li class="index_item">HTML 버전 스케쥴</li>
+                    <li class="index_item">HTML 초안 버전 스케쥴</li>
+                    <li class="index_item">XHTML 버전</li>
+                </ol>
+            </ol>
+        </ol>
+
+        <ol class="index">
+            <li class="index_item">마크업</li>
+            <ol class="index">
+                <li class="index_item">HTML 요소</li>
+                <li class="index_item">데이터 형식</li>
+                <li class="index_item">문서 형식 선언</li>
+            </ol>
+        </ol>
+    </fieldset>
+</body>
+
+</html>

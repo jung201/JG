@@ -1,0 +1,208 @@
+<!-- KGW -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/mypage/mypage.css">
+    <title>마이페이지</title>
+</head>
+
+<body>
+    <!-- mypage 시작 -->
+    <div class="mypage">
+
+        <!-- header 시작 -->
+        <header class="header">
+            <div class="top">
+                <a class="logo_pic" href="../../HTML/mainpage/main.html">
+                    <img src="../../img/withDreamLogo2.png" alt="logo">
+                </a>
+                <div class="jlmToBtn">
+                    <button type="button" id="joinBtn">Join</button>
+                    <button type="button" id="loginBtn">Login</button>
+                    <button type="button" id="mypageBtn" style="display:none;">MyPage</button>
+                    <button type="button" id="logoutBtn" style="display:none;">Logout</button>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="menu">
+                    <ul class="menu_inner">
+                        <li id="myPageToHome">홈</li>
+                        <li id="myPageToList">펀딩 리스트</li>
+                        <li id="myPageToend">종료 펀딩</li>
+                        <li id="myPageTopurchase_1">작품 구매</li>
+                        <li id="endTopurchaseregister_1">작품 등록</li>
+                        <li id="endTregister_1">펀딩 등록</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header 종료 -->
+
+        <!-- 마이페이지 글자 시작 -->
+        <div class="displaytextbox">
+            <h1 class="displaytext">마이페이지</h1>
+        </div>
+        <div class="sub">
+            <h4 class="profilemenu">내 프로필</h4>
+            <div class="area">
+                "팔뢰비도" 는 커뮤니케이터와 사진작가가 가족간의 대화를 증진시키고 새로운 추억을 선물해드리기 위해 뭉친 팀입니다.
+                커뮤니케이터 "팔뢰"는 5년간의 진로 강사 활동으로 8개의 기관에서 약 320명 이상의 진로컨설팅을 진행했습니다.
+                사진작가 "비도"는 4년차 포토그래퍼로 배우 시네마틱 프로필 사진을 주로 촬영하고 있으며, 현재까지 520명 이상의 프로필 촬영 6회 이상의 전시 경력을 가지고 있습니다.
+                저희가 가진 열정으로 더 많은 이들에게 긍정적인 경험을 건네드리고 싶습니다.
+            </div>
+
+            <section>
+                <div class="pic_container">
+                    <div class="maindComment">등록한 펀딩</div>
+                    <div class="pic_list">
+                        <div class="inner" id="mypagePic_1">
+                            <a href="../../HTML/mainpage/detail.html"><img src="../../img/photo2.jfif" alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">15 years of travelling&emsp;&emsp;&ensp;25.01.25~25.06.30</div>
+                                <div class="title">100개국을 촬영하는 프로젝트: 중미 편</div>
+                                <div class="title" id="fun">펀딩 달성률: 70% (3,000,000원)</div>
+                                <div class="title"><i class="fa-solid fa-heart"
+                                        style="color: #ff0000;"></i>&ensp;:&ensp;256</div>
+                            </div>
+                        </div>
+                        <div class="inner" id="mypagePic_2">
+                            <a href="../../HTML/mainpage/detailmypage.html"><img src="../../img/green.avif"
+                                    alt="img1"></a>
+                            <div class="comment">
+                                <div class="author">15 years of travelling&emsp;&emsp;&ensp;25.01.25~25.06.30</div>
+                                <div class="title">녹색 바다를 헤엄치다
+                                    사진집 <녹색 세계>
+                                </div>
+                                <div class="title" id="fun">펀딩 달성률: 100% (5,000,000원)</div>
+                                <div class="title"><i class="fa-solid fa-heart"
+                                        style="color: #ff0000;"></i>&ensp;:&ensp;310</div>
+                            </div>
+                        </div>
+                        <div class="inner" id="mypagePic_2">
+                            <a href="../../HTML/mainpage/detail.html"><img src="../../img/가로작품9 (4).jpg" alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">15 years of travelling&emsp;&emsp;&ensp;25.01.25~25.06.30</div>
+                                <div class="title">깊은 산속 밤하늘
+                                </div>
+                                <div class="title" id="fun">펀딩 달성률: 5% (200,000원)</div>
+                                <div class="title"><i class="fa-solid fa-heart"
+                                        style="color: #ff0000;"></i>&ensp;:&ensp;19</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picline"></div>
+                    <div class="maindComment">후원한 펀딩</div>
+                    <!-- 후원한 펀딩 시작 -->
+                    <div class="pic_list">
+                        <div class="inner" id="mypagePic_1">
+                            <a href="../../HTML/mainpage/detail.html"><img src="../../img/경옥고.jpeg" alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">경옥진액비누&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;25.01.25~25.06.30
+                                </div>
+                                <div class="title">퍼석한 각질, 묵은피지 올킬하는 블랙바
+                                </div>
+                                <div class="title" id="fun">펀딩 달성률: 70% (3,000,000원)</div>
+                                <div class="title" id="fun">후원한 금액: 100,000원</div>
+                            </div>
+                        </div>
+                        <div class="inner" id="mypagePic_2">
+                            <a href="../../HTML/mainpage/detail.html"><img src="../../img/산나비.avif" alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">원더포션
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;25.01.25~25.06.30</div>
+                                <div class="title">게임 <산나비> 한정판 오피셜 아트북</div>
+
+                                <div class="title" id="fun">펀딩 달성률: 34% (1,230,000원)</div>
+                                <div class="title" id="fun">후원한 금액: 250,000원</div>
+                            </div>
+                        </div>
+                        <div class="inner" id="mypagePic_3">
+                            <a href="../../HTML/mainpage/detailmypage.html"><img src="../../img/호랑이들어와요.avif"
+                                    alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">네이버웹툰&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;25.01.25~25.06.30
+                                </div>
+                                <div class="title">애니메이션 <호랑이 들어와요> 제작후원</div>
+
+                                <div class="title" id="fun">펀딩 달성률: 250% (4,200,000원)</div>
+                                <div class="title" id="fun">후원한 금액: 400,000원</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picline"></div>
+                    <div class="maindComment">구매한 작품</div>
+
+                    <!-- 후원한 펀딩 시작 -->
+                    <div class="pic_list">
+                        <div class="inner" id="mypagePic_1">
+                            <a href="../../HTML/purchase/purchasepageclone.html"><img src="../../img/가로작품9 (7).jpg"
+                                    alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">구르미 그린 작가&emsp;&emsp;&emsp;&emsp;&ensp;25.01.25~25.06.30</div>
+                                <div class="title">물에 비친 나
+                                </div>
+                                <div class="title" id="fun">펀딩 달성률: 120% (3,000,000원)</div>
+                                <div class="title" id="fun">구매 총 금액: 200,000원</div>
+                            </div>
+                        </div>
+                        <div class="inner" id="mypagePic_2">
+                            <a href="../../HTML/purchase/purchasepageclone.html"><img src="../../img/가로작품9 (6).jpg"
+                                    alt="img1"></a>
+
+                            <div class="comment">
+                                <div class="author">차이코프스키&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;25.01.25~25.06.30
+                                </div>
+                                <div class="title">사진집 <백조의 호수>
+                                </div>
+                                <div class="title" id="fun">펀딩 달성률: 170% (3,000,000원)</div>
+                                <div class="title" id="fun">구매 총 금액: 130,000원</div>
+                            </div>
+                        </div>
+                        <div class="inner" id="mypagePic_3">
+                            <a href="../../HTML/purchase/purchasepageclone.html"><img src="../../img/가로작품9 (5).jpg"
+                                    alt="img1"></a>
+                            <div class="comment">
+                                <div class="author">
+                                    김홍인&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;25.01.25~25.06.30</div>
+                                <div class="title">그림같은 데칼코마니</div>
+                                <div class="title" id="fun">펀딩 달성률: 130% (3,000,000원)</div>
+                                <div class="title" id="fun">구매 총 금액: 8,000,000원</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+
+            <div class="explain">
+                <div class="bottomline"></div>
+                <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+                    <br><br>
+                    이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+                </p>
+                <p class="companyx">
+                    직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+
+                    직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+            </div>
+        </div>
+        <script src="../../JS/mypage/mypage.js"></script>
+        <script src="../../js/mainpage/common.js"></script>
+        <!-- mypage 끝 -->
+</body>
+
+</html>

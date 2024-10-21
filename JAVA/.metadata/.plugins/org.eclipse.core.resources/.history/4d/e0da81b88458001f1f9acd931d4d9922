@@ -1,0 +1,26 @@
+package homework;
+
+public class H240812_2 {
+
+	public static void main(String[] args) {
+		int a = 10;
+		System.out.println(a); // 10
+		
+		int b = 30;
+		System.out.println(b); // 30
+		
+//		int b = 30;
+//	    System.out.println(b+10); // int b 중복 선언으로 에러발생
+	    
+	    int c = 30;
+	    System.out.println(c+c); // 60
+	    
+	    int hello = 50;
+	    System.out.println(hello+30); // 80
+	    
+	    int d = 30;
+	    d = 60;
+	    System.out.println(d); // 60
+	}
+
+}

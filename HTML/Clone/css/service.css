@@ -1,0 +1,214 @@
+section {
+    margin-left: 5vw;
+    margin-bottom: 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section {
+        margin-left: 1vw;
+        margin-bottom: 18vw;
+    }
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(225, 227, 227);
+    z-index: -2;
+}
+
+section .container {
+    width: 700px;
+    margin-top: 6%;
+    margin-right: 3%;
+    margin-left: 4%;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section .container {
+        width: 800px;
+        margin-top: 6%;
+        margin-right: 1%;
+        margin-left: 3%;
+        /* padding-right: 2%; */
+    }
+}
+
+section .font1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(2, 152, 211);
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+section .font2 {
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section .font2 {
+        font-size: 2rem;
+    }
+}
+
+section .font3 {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section .font3 {
+        font-size: 2rem;
+    }
+}
+
+section .container1 {
+    width: 100%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section .container1 {
+        width: 100%;
+        margin-top: 5%;
+        margin-right: 3%;
+    }
+}
+
+section .container1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .container1 .human {
+    font-size: 6.8rem;
+    line-height: 90%;
+    color: rgb(197, 213, 207);
+    padding-left: 1%;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section .container1 .human {
+        width: 800px;
+        margin-left: 2.5%;
+        font-size: 5rem;
+        line-height: 90%;
+        color: rgb(197, 213, 207);
+    }
+}
+
+section .container1 .inner {
+    font-size: 1.1rem;
+    width: 330px;
+    height: 400px;
+    padding: 32px;
+    margin-left: 2%;
+    float: left;
+    border: 1px solid skyblue;
+    cursor: pointer
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    section .container1 .inner {
+        font-size: 16px;
+        width: 250px;
+        height: 380px;
+        padding: 25px;
+        float: left;
+        border: 1px solid skyblue;
+        cursor: pointer
+    }
+}
+
+section .container1 .inner {
+    background-color: white;
+}
+
+section .container1 .inner:last-child {
+    margin-right: 0;
+}
+
+section .container1 .inner:hover {
+    background-color: blue;
+    color: white;
+}
+
+section .container1 .inner:hover .icon {
+    color: white;
+}
+
+section .container1 .inner:hover h1 {
+    color: white;
+}
+
+section .container1 .inner:hover .content div {
+    background-color: white;
+
+}
+
+section .container1 .inner:hover .content .box div {
+    color: blue;
+}
+
+section .container1 .inner:hover .content .box1 .div1 {
+    color: blue;
+}
+
+section .container1 .inner .content .box {
+    display: flex;
+    width: 55px;
+    height: 65px;
+    font-size: 45px;
+    background-color: blue;
+    color: white;
+    margin-left: 242px;
+    margin-top: 88px;
+}
+
+section .container1 .inner .content .box1 {
+    display: flex;
+    width: 55px;
+    height: 65px;
+    font-size: 45px;
+    background-color: blue;
+    color: white;
+    margin-left: 242px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+section .container1 .inner .content .box div {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+/* section .container1 .inner .content .box .div1 {
+    margin-left: 10px;
+    margin-bottom: 35px;
+} */
+
+section .container1 h1 {
+
+    color: blue;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section .container1 .inner .icon {
+    font-size: 4rem;
+    color: blue;
+}

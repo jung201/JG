@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정규 Sign Up</title>
+    <style>
+        body {
+            width: 500px;
+            margin: auto;
+        }
+
+        fieldset {
+            text-align: center;
+            border: 1px solid;
+            padding: 25px;
+            color: white;
+            background-color: #1d301d;
+        }
+
+        .signup {
+            font-size: 15px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            color: white;
+            background-color: #0aa15b;
+        }
+
+        .login {
+            font-size: 15px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            color: white;
+            background-color: #5a5858;
+        }
+
+        input {
+            font-size: 15px;
+            text-indent: 1%;
+            width: 400px;
+            height: 40px;
+            margin: 15px 0px 25px;
+            border: 1px solid white;
+            color: white;
+            background-color: #1d301d;
+        }
+
+        .getstarted {
+            font-size: 25px;
+            letter-spacing: 3px;
+            width: 410px;
+            height: 50px;
+            margin: 10px 0px 10px;
+            border: none;
+            padding: none;
+            color: white;
+            background-color: #0aa15b;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="#" method="post">
+            <fieldset>
+                <button class="signup" type="button">Sign Up
+                    <button class="login" type="button" onclick="location.href='login.html'">Log In</button>
+                    <p>
+                    <h2>Sign Up for Free</h2>
+                    </p>
+                    <label><input type="email" name="EmailAddress" placeholder="Email Address *" </label>
+                        <label><input type="password" name="password" placeholder="Set A Password *"></label>
+                        <label><input type="password" name="Confirm A Password"
+                                placeholder="Confirm A Password*"></label>
+                        <button class="getstarted" type="button">GET STARTED</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

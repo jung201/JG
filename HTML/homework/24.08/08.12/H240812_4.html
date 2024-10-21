@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>비밀번호 입력 양식</title>
+    </head>
+    <body>
+        <h2>회원 인증 입력 양식</h2>
+        <form action="page.jsp" method="get">
+            <p>지점 : <input type="text" name="branch" value="천안"></p>
+                        <!--required 무조건 작성해야 넘어가게 해줌-->
+            <p>이름 : <input type="text" name="name" size="3" required </p>
+            <p>과정 : <input type="text" name="major" value="JAVA활용 데이터 플랫폼 과정" maxlenght="30"></p>
+            <p>비밀번호 : <input type="password" name="password" size="20" placeholder="특수문자 포함 10자리 이상" minlenght="10" required></p>
+            
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+        </form>
+    </body>
+</html>

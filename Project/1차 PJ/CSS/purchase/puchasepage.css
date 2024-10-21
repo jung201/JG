@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Main  */
+
+/* purchasePage 시작  */
+
+.purchasePage {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 상단 로고 */
+
+.purchasePage header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchasePage header .logo_pic {
+  width: 65%;
+}
+
+.purchasePage header .logo_pic img {
+  width: 50%;
+  cursor: pointer;
+}
+
+.purchasePage header .jlmToBtn {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* join, loing, mypage */
+.purchasePage header .jlmToBtn button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.purchasePage header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
+.purchasePage header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+.purchasePage header .scroll .menu {
+  width: 80%;
+}
+
+.purchasePage header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+.purchasePage header .menu li {
+  width: 18%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.purchasePage header .menu li:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 메인 */
+
+/* title */
+.purchasePage div.creationName {
+  text-align: center;
+  font-size: 50px;
+  padding: 150px 0px 80px 0px;
+}
+
+/* purchase */
+
+.purchasePage .purchase {
+  height: auto;
+  padding-top: 100px;
+  margin-left: 35px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.purchasePage .purchase .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* purchase 왼쪽 사진부분 */
+.purchasePage .purchase .container .left {
+  width: 50%;
+  height: 600px;
+}
+
+/* purchase 왼쪽 사진*/
+.purchasePage .purchase .container .left img {
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+
+/* 메인 오른쪽 부분 */
+.purchasePage div.right {
+  width: 50%;
+  display: inline-block;
+}
+
+.purchasePage table.creatorInformation {
+  font-size: 19px;
+  border-spacing: 40px;
+}
+
+.purchasePage table.creatorInformation th {
+  width: 100px;
+  vertical-align: top;
+
+}
+
+.purchasepopup {
+  height: auto;
+  margin: 200px 100px 10px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.purchasepopup #wrap {
+  width: 65%;
+  height: 1500px;
+}
+
+.purchasepopup #accordian .number {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #888;
+  font-size: 36px;
+  text-align: center;
+  border-radius: 100%;
+  float: left;
+}
+
+.purchasepopup #accordian .step {
+  width: 100%;
+  height: 63px;
+  background: #FF8566;
+  font-family: "Gowun Dodum", sans-serif;
+  color: #FFF;
+  padding-left: 1%;
+  padding-top: 5px;
+  border-radius: 8px;
+  border-bottom: 3px solid #d9d9d9;
+  float: left;
+}
+
+.purchasepopup #accordian .title {
+  float: left;
+  width: 80%;
+  height: 50px;
+  margin-left: 1%;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.purchasepopup #accordian .title h1 {
+  font-weight: 400;
+}
+
+.purchasepopup #accordian .content .box {
+  width: 450px;
+  height: 50px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  text-indent: 10px;
+  outline-color: gray;
+}
+
+.purchasepopup #accordian .content {
+  padding: 2em 2em;
+  width: 100%;
+  background: #FFF;
+  float: left;
+}
+
+.purchasepopup #accordian #textarea_id {
+  width: 100%;
+  height: 120px;
+}
+
+.purchasepopup .check {
+  margin-top: 1.5rem;
+  margin-bottom: 1.0rem;
+}
+
+.purchasepopup #submitButton {
+  width: 100%;
+  height: 55px;
+  border-style: none;
+  border-radius: 9px;
+  color: white;
+  background-color: rgb(52, 99, 255);
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 130px;
+}
+
+.purchasepopup #submitButton:hover {
+  background: rgb(82, 111, 163);
+}
+
+/* 합계 금액 계산창 */
+
+
+fieldset {
+  border: none;
+  border-radius: 3px;
+  color: black;
+}
+
+label {
+  display: table;
+  vertical-align: baseline;
+}
+
+
+label:hover,
+input:hover {
+  cursor: pointer;
+}
+
+#sum {
+  margin-top: 31px;
+  margin-left: 5px;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+#sum strong {
+  display: inline-block;
+  position: relative;
+}
+
+.explain {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+@media only all and (min-width: 1500px) {
+  .purchasePage {
+    margin: 30px 150px;
+  }
+
+  .purchasePage .purchase .container .left {
+    width: 60%;
+  }
+
+  .purchasePage .purchase .container .right {
+    width: 40%;
+  }
+
+  .purchasePage .purchase .container .left img {
+    height: 700px;
+  }
+
+  .purchasePage header .logo_pic img {
+    width: 40%;
+  }
+
+  .purchasePage header .jlmToBtn button {
+    font-size: 24px;
+  }
+
+  .purchasepopup #submitButton {
+    height: 70px;
+    font-size: 40px;
+  }
+
+  @media only all and (min-width: 992px) and (max-width: 1200px) {
+    .purchasePage {
+      margin: 20px 50px;
+    }
+
+    .purchasePage .purchase .container .left {
+      width: 55%;
+    }
+
+    .purchasePage .purchase .container .right {
+      width: 45%;
+    }
+
+    .purchasePage .purchase .container .left img {
+      height: 500px;
+    }
+
+    .purchasePage header .logo_pic img {
+      width: 50%;
+    }
+
+    .purchasePage header .jlmToBtn button {
+      font-size: 20px;
+    }
+
+    .purchasepopup #submitButton {
+      height: 60px;
+      font-size: 30px;
+    }
+  }
+
+  @media only all and (min-width: 768px) and (max-width: 991px) {
+    .purchasePage {
+      margin: 10px 30px;
+    }
+
+    .purchasePage .purchase .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .purchasePage .purchase .container .left,
+    .purchasePage .purchase .container .right {
+      width: 100%;
+      text-align: center;
+    }
+
+    .purchasePage .purchase .container .left img {
+      height: auto;
+      width: 90%;
+    }
+
+    .purchasePage header .logo_pic img {
+      width: 60%;
+    }
+
+    .purchasePage header .jlmToBtn button {
+      font-size: 18px;
+    }
+
+    .purchasepopup #submitButton {
+      height: 55px;
+      font-size: 25px;
+    }
+  }
+
+}

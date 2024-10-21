@@ -1,0 +1,950 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Main 시작  */
+
+main {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 상단 로고 */
+
+main header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header .logo_pic {
+  width: 65%;
+}
+
+main header .logo_pic img {
+  width: 50%;
+  cursor: pointer;
+}
+
+main header .jlmToBtn {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main header .jlmToBtn button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
+main header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+  background-color: white;
+}
+
+main header .scroll .menu {
+  width: 80%;
+}
+
+main header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  align-items: center;
+  text-align: center;
+}
+
+main header .menu li {
+  width: 18%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+main header .menu li:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 메인 */
+
+main .mainBox {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 메인 왼쪽 부분 */
+main .mainBox .left {
+  width: 75%;
+}
+
+/* 메인 슬라이드 부분 */
+main section {
+  width: 100%;
+  height: 470px;
+  border-radius: 5px;
+  margin: 0px 0px 20px;
+  overflow: hidden;
+}
+
+main section {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+/* 메인 슬라이더 */
+main section .pic_slider {
+  display: flex;
+  width: 500%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* 메인 슬라이더 5장 간격 */
+main section .pic_slider li {
+  width: 20%;
+}
+
+/* 메인 이미지 */
+main section .pic_slider li img {
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+  background-size: cover;
+}
+
+/* 서브 슬라이드 */
+
+/* 서브 코멘트 */
+main .subPicComment {
+  font-size: 22px;
+  margin: 30px 0px 5px 0px;
+  font-weight: bold;
+}
+
+/* 서브 배열 */
+main sub {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* 서브 슬라이드 사진 간격 */
+main sub div {
+  width: 24%;
+  position: relative;
+}
+
+/* 서브 슬라이드 사진리스트*/
+main sub .pic_container .pic_list {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* 서브 슬라이드 사진 */
+main sub .pic_container .pic_list img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  background-size: cover;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* 서브 슬라이드 버튼 */
+main sub button {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(235, 35, 35);
+  cursor: pointer;
+}
+
+/* 서브 슬라이드 왼쪽 버튼 위치 */
+main sub .btn1,
+main sub .btn3,
+main sub .btn5,
+main sub .btn7 {
+  left: 10px;
+}
+
+/* 서브 슬라이드 오른쪽 버튼 위치 */
+main sub .btn2,
+main sub .btn4,
+main sub .btn6,
+main sub .btn8 {
+  right: 10px;
+}
+
+/* 메인 오른쪽 부분 */
+main .mainBox .right {
+  width: 22%;
+}
+
+/* 메인 오른쪽 타이틀 */
+main .mainBox .right .title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: -10px 0px 5px 0px;
+}
+
+/* 메인 오른쪽 타이틀 전체보기 */
+main .mainBox .right .title div {
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* 메인 오른쪽 시간 */
+main .mainBox .right div#timeDisplay {
+  margin-bottom: 10px;
+}
+
+/* 메인 오른쪽 전체공간 */
+main .mainBox .right .pic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메인 오른쪽  사진공간 */
+main .mainBox .right .pic .rightPic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* 메인 오른쪽 이미지 크기 */
+main .mainBox .right .pic .rightPic img {
+  width: 40%;
+  height: 113px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+main .mainBox .right .pic .rightPic:hover img {
+  transform: scale(1.05);
+}
+
+/* 메인 오른쪽 이미지 옆 번호 */
+main .mainBox .right .pic .rightPic .num {
+  width: 8%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(235, 35, 35);
+}
+
+/* 메인 오른쪽 이미지 옆 번호 옆 멘트 */
+main .mainBox .right .pic .rightPic .comment {
+  width: 52%;
+  font-size: 17px;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+/* 메인 오른쪽 멘트 상단 문구 */
+main .mainBox .right .pic .rightPic .comment dt {
+  font-size: 16px;
+  margin: 3px 0px 5px 0px;
+}
+
+/* 메인 오른쪽 멘트 하단 문구 */
+main .mainBox .right .pic .rightPic .comment dd {
+  font-size: 15px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
+/* otherTwo */
+main .other_2 .otherTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .other_2 .otherTwo .otherPic_container {
+  width: 100%;
+}
+
+main .other_2 .otherTwo .otherPic_container .inner {
+  width: 100%;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+main .other_2 .otherTwo .otherPic_container .inner img {
+  width: 90%;
+  height: 200px;
+  border-radius: 5px;
+  background-size: cover;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+main .other_2 .otherTwo .otherPic_container .inner:hover img {
+  transform: scale(1.05);
+}
+
+main .other_2 .otherTwo .otherPic_container .inner .comment {
+  width: 90%;
+  height: 120px;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+main .other_2 .otherTwo .author {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .other_2 .otherTwo .title {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+/* other pic */
+
+main .other {
+  width: 100%;
+  display: flex;
+}
+
+/* other 코멘트 */
+main .otherPicComment {
+  width: 100%;
+  border-top: 2px solid rgb(184, 181, 181);
+  margin: 70px 0px 10px 0px;
+  padding-top: 50px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .other .otherLeft {
+  width: 40%;
+  display: flex;
+  margin-right: 30px;
+}
+
+main .other .otherLeft .inner {
+  width: 100%;
+  height: 500px;
+}
+
+main .other .otherLeft .inner img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+main .other .otherLeft .author {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+main .other .otherLeft .title {
+  font-size: 18px;
+  padding-right: 50px;
+}
+
+
+/* otherRight */
+
+main .other .otherRight {
+  width: 100%;
+}
+
+main .other .otherRight .otherOne {
+  display: flex;
+
+}
+
+main .other .otherRight .otherPic_container {
+  width: 100%;
+}
+
+main .other .otherRight .otherPic_container .inner {
+  width: 90%;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+main .other .otherRight .otherPic_container .inner img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  background-size: cover;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+main .other .otherRight .otherPic_container .inner:hover img {
+  transform: scale(1.05);
+}
+
+
+main .other .otherRight .otherPic_container .inner .comment {
+  height: 120px;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+main .other .otherRight .author {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .other .otherRight .title {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+main .explain {
+  margin-top: 70px;
+}
+
+
+
+/* 미디어 쿼리 */
+/* 큰화면 데스크탑 (가로 해상도가 1500px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1500px) {
+
+  /* Main 시작  */
+  main {
+    margin: 20px 150px;
+  }
+
+  /* 상단 로고 */
+  main header .logo_pic img {
+    position: relative;
+    top: -20px;
+  }
+
+  /* 우측 서치부분 */
+  main header .search {
+    width: 28%;
+  }
+
+  main .mainBox {
+    padding: 30px;
+  }
+
+  /* 메인 슬라이드 부분 */
+  main section {
+    height: 490px;
+    margin: 20px 0px 30px 0px;
+  }
+
+  /* 서브 배열 */
+  main sub {
+    height: 200px;
+  }
+
+  /* 서브 슬라이드 사진 간격 */
+  main sub div {
+    height: 200px;
+  }
+
+  /* 서브 슬라이드 사진 */
+  main sub .pic_container .pic_list img {
+    height: 200px;
+  }
+
+
+
+  /* 메인 오른쪽 타이틀 전체보기 */
+  main .mainBox .right .title {
+    margin-top: 15px;
+  }
+
+  main .mainBox .right .title div {
+    font-size: 16px;
+  }
+
+  /* 메인 오른쪽 이미지 크기 */
+  main .mainBox .right .pic .rightPic img {
+    width: 45%;
+    height: 130px;
+  }
+
+  /* 메인 오른쪽 이미지 옆 번호 */
+  main .mainBox .right .pic .rightPic .num {
+    width: 8%;
+    font-size: 18px;
+  }
+
+  /* 메인 오른쪽 멘트 상단 문구 */
+  main .mainBox .right .pic .rightPic .comment dt {
+    font-size: 16px;
+  }
+
+  /* 메인 오른쪽 멘트 하단 문구 */
+  main .mainBox .right .pic .rightPic .comment dd {
+    font-size: 15px;
+  }
+
+
+  /* other pic */
+  main .other .otherTwo {
+    margin: 0px 20px;
+
+  }
+
+  /* other pic */
+  main .other {
+    height: 800px;
+    display: flex;
+  }
+
+  main .otherPicComment {
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+  main .other .otherLeft {
+    width: 30%;
+  }
+
+  main .other .otherLeft .inner {
+    height: 400px;
+    padding-left: 30px;
+  }
+
+  main .other .otherLeft .inner img {
+    width: 90%;
+    height: 400px;
+    border-radius: 5px;
+  }
+
+  main .other .otherLeft .author {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0px;
+  }
+
+  main .other .otherLeft .title {
+    font-size: 20px;
+    padding-right: 50px;
+  }
+
+  /* otherRight */
+
+  main .other .otherRight {
+    width: 70%;
+  }
+
+  main .other .otherRight .otherPic_container {
+    width: 80%;
+  }
+
+  main .other .otherRight .otherPic_container .inner {
+    width: 90%;
+  }
+
+  main .other .otherRight .otherPic_container .inner img {
+    width: 100%;
+    height: 230px;
+  }
+
+  main .other .otherRight .author {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  main .other .otherRight .title {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
+/* 데스크탑 (가로 해상도가 992px보다 크고 1299px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+  main header .search {
+    width: 50%;
+  }
+
+  main header .scroll .menu {
+    width: 80%;
+  }
+
+  main header .scroll .menu .menu_inner {
+    width: 130%;
+    height: 70px;
+  }
+
+  main header .menu li {
+    font-size: 18px;
+  }
+
+  main header .jlmToBtn {
+    width: 25%;
+  }
+
+  main header .jlmToBtn button {
+    font-size: 18px;
+  }
+
+  /* 메인 오른쪽 타이틀 */
+  main .mainBox .right .title {
+    font-size: 15px;
+  }
+
+  /* 메인 오른쪽 타이틀 전체보기 */
+  main .mainBox .right .title div {
+    font-size: 13px;
+  }
+
+  /* 메인 오른쪽  사진공간 */
+  main .mainBox .right .pic .rightPic {
+    margin-bottom: 10px;
+  }
+
+  /* 메인 오른쪽 이미지 크기 */
+  main .mainBox .right .pic .rightPic img {
+    width: 50%;
+  }
+
+  /* 메인 오른쪽 이미지 옆 번호 */
+  main .mainBox .right .pic .rightPic .num {
+    font-size: 16px;
+  }
+
+  /* 메인 오른쪽 이미지 옆 번호 옆 멘트 */
+  main .mainBox .right .pic .rightPic .comment {
+    font-size: 13px;
+  }
+
+  /* 메인 오른쪽 멘트 상단 문구 */
+  main .mainBox .right .pic .rightPic .comment dt {
+    font-size: 13px;
+  }
+
+  /* 메인 오른쪽 멘트 하단 문구 */
+  main .mainBox .right .pic .rightPic .comment dd {
+    font-size: 12px;
+  }
+
+  /* 서브 코멘트 */
+  main .subPicComment {
+    font-size: 18px;
+    margin: 30px 0px 5px 0px;
+    font-weight: bold;
+  }
+
+  /* 서브 배열 */
+  main sub {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  /* 서브 슬라이드 사진 간격 */
+  main sub div {
+    height: 120px;
+  }
+
+  /* 서브 슬라이드 사진 */
+  main sub .pic_container .pic_list img {
+    height: 120px;
+  }
+
+
+  /* other */
+
+  /* other 코멘트 */
+  main .otherPicComment {
+    font-size: 18px;
+  }
+
+  main .other .otherLeft {
+    width: 40%;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  main .other .otherLeft .inner {
+    width: 100%;
+    height: 800px;
+  }
+
+  main .other .otherLeft .inner img {
+    width: 80%;
+    height: 250px;
+    border-radius: 5px;
+  }
+
+  main .other .otherLeft .author {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+  }
+
+  main .other .otherLeft .title {
+    font-size: 16px;
+    padding-right: 50px;
+  }
+
+
+  /* otherRight */
+
+  main .other .otherRight {
+    width: 50%;
+  }
+
+  main .other .otherRight .otherOne {
+    flex-wrap: wrap;
+  }
+
+  main .other .otherRight .otherPic_container {
+    width: 50%;
+  }
+
+  main .other .otherRight .otherPic_container .inner {
+    width: 90%;
+  }
+
+  main .other .otherRight .otherPic_container .inner img {
+    width: 100%;
+    height: 120px;
+  }
+
+  main .other .otherRight .otherPic_container .inner .comment {
+    height: 80px;
+  }
+
+  main .other .otherRight .author {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  main .other .otherRight .title {
+    font-size: 13px;
+  }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  main header .jlmToBtn button {
+    font-size: 16px;
+  }
+
+  main header .menu li {
+    width: 25%;
+    font-size: 15px;
+  }
+
+  main header .search {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  main header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  main header .search i {
+    right: 20px;
+    font-size: 15px;
+  }
+
+  main .mainBox {
+    width: 100%;
+    height: 700px;
+    margin-top: 30px;
+    display: flex;
+  }
+
+  /* 메인 왼쪽 부분 */
+  main .mainBox .left {
+    width: 100%;
+  }
+
+  /* 메인 오른쪽 부분 */
+  main .mainBox .right {
+    width: 0%;
+    overflow: hidden;
+  }
+
+  main .subPicComment {
+    font-size: 18px;
+  }
+
+  /* other */
+
+  main .other {
+    width: 100%;
+    display: contents;
+  }
+
+  /* other 코멘트 */
+  main .otherPicComment {
+    width: 100%;
+    border-top: 2px solid rgb(184, 181, 181);
+    margin: 70px 0px 10px 0px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  main .other .otherLeft {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  main .other .otherLeft .inner {
+    width: 100%;
+    height: 500px;
+  }
+
+  main .other .otherLeft .inner img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+  }
+
+  main .other .otherLeft .author {
+    font-size: 18px;
+  }
+
+  main .other .otherLeft .title {
+    font-size: 16px;
+  }
+
+
+  /* otherRight */
+
+  main .other .otherRight {
+    width: 100%;
+  }
+
+  main .other .otherRight .otherOne {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+
+  main .other .otherRight .otherPic_container {
+    width: 40%;
+  }
+
+  main .other .otherRight .otherPic_container .inner {
+    width: 100%;
+    white-space: normal;
+    word-break: break-all;
+    cursor: pointer;
+  }
+
+  main .other .otherRight .otherPic_container .inner img {
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  main .other .otherRight .otherPic_container .inner .comment {
+    height: 120px;
+    white-space: normal;
+    word-break: break-all;
+    cursor: pointer;
+  }
+
+  main .other .otherRight .author {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  main .other .otherRight .title {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+
+}
+
+
+
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 767px 보다 작은 화면에 적용)  */
+/* @media only all and (min-width: 576px) and (max-width: 767px) {} */

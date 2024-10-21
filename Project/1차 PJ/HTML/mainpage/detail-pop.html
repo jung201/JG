@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/mainpage/detail-pop.css">
+    <title>detail-pop</title>
+</head>
+
+<body>
+    <div class="detail_Pop">
+        <div class="container">
+            <div class="title"> 상품 선택 </div>
+            <div class="discription">
+                <div class="choice">스탠다드 에디션 (배송비포함)</div>
+                <ul class="informationList">
+                    <li>한정판 아트북 × 1</li>
+                    <li>엽서 × 1 </li>
+                    <li>액자 × 1 </li>
+                    <li>관람티켓 × 1 </li>
+                </ul>
+            </div>
+            <form>
+                <div class="cnt">
+                    <input class="cntBtn" type='button' onclick='count("plus")' value='▲' />
+                    <span id='result'>1</span>
+                    <input class="cntBtn" type='button' onclick='count("minus")' value='▼' />
+                </div>
+                <div class="amount">
+                    <span id='totalPrice'>60000 원<span>
+                </div>
+                <div class="payment">
+                    <button id="myButton">결제하기</button>
+                    <p id="message"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../../JS/mainpage/detail-pop.js"></script>
+</body>
+
+</html>

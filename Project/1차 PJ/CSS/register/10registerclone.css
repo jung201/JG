@@ -1,0 +1,94 @@
+/* 공통 설정 */
+body {
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.register {
+    margin: 20px 120px;
+    background-repeat: none;
+}
+
+.register .img img {
+    width: 100%;
+}
+
+.register .menu .fund {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.register .content {
+    width: 100%;
+    margin-top: 40px;
+}
+
+textarea.theme, textarea.details, input.addbutton {
+    width: 100%;
+    font-size: 15px;
+    border: 0.5px solid rgb(130, 160, 250);
+    border-radius: 10px;
+    margin: 5px 0px 20px 0px;
+    padding: 12px;
+    resize: none;
+    outline: none;
+}
+
+textarea.details {
+    height: 350px;
+}
+
+/* 상품 추가 버튼 */
+button.duplicate {
+    background-color: rgba(15, 51, 214, 0.712);
+    border-radius: 3px;
+    border-color: transparent;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-family: "Gowun Dodum", sans-serif;
+    cursor: pointer;
+}
+
+button.duplicate:hover {
+    background-color: rgb(18, 7, 59);
+    color: white;
+}
+
+/* 상품 정보 스타일 */
+#productInfoContainer {
+    margin-top: 20px;
+}
+
+.product-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4a74ff;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+.product-card:hover {
+    background-color: #2d50c5;
+    border-color: rgb(0, 0, 0);
+    border: none;
+  }
+
+
+.product-details p {
+    margin: 5px 0;
+    font-size: 20px;
+    font-family: "Gowun Dodum", sans-serif;
+}

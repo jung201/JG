@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 z-index</title>
+        <style>
+            #box1{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                background: blue;
+                z-index: 3;
+            }
+            #box2{
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                width: 100px;
+                height: 100px;
+                background: yellow;
+                z-index: 2;
+            }
+            #box3{
+                position: absolute;
+                top: 60px;
+                left: 60px;
+                width: 100px;
+                height: 100px;
+                background: green;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">box #1</div>
+        <div id="box2">box #2</div>
+        <div id="box3">box #3</div>
+    </body>
+</html>

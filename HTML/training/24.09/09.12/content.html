@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>콘텐츠 조작하기</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <p id="title">Hello, <span style="display:none;">Javascript!</span></p>
+
+        <p id="textContent"></p>
+        <p id="innerText"></p>
+        <p id="innerHTML"></p>
+        <script>
+            document.getElementById("title").textContent;
+            document.getElementById("title").innerText;
+            document.getElementById("title").innerHTML;
+
+            // console.log(document.getElementById("title").textContent);
+            // console.log(document.getElementById("title").innerText);
+            // console.log(document.getElementById("title").innerHTML);
+
+            // document.getElementById("title").textContent = "데이터 플랫폼 풀스택 개발 과정";
+            // document.getElementById("title").innerHTML = `데이터 플랫폼 <strong>풀스택</strong> 개발자 과정`
+            
+            document.querySelector("#textContent").textContent = `<strong>textContent</strong> 속성`;
+            document.querySelector("#innerText").innerText = `<strong>innerText</strong> 속성`;
+            document.querySelector("#innerHTML").innerHTML = `<strong>innerHTML</strong> 속성`;
+
+        </script>
+    </body>
+</html>

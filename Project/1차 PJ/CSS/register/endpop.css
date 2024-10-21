@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+@media only all and (min-width: 1200px){
+
+}
+
+*{
+    margin: 10px;
+    padding: 10px;
+    margin-top:0px;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.endpop .description{
+    background-color:rgba(181, 181, 196, 0.267);
+    border-radius: 10px;
+    border:3px solid rgb(1, 20, 85);
+}
+
+.endpop .img{
+    display:flex;
+    justify-content: center;
+}
+
+.endpop .content{
+    width: 100%;
+    justify-content: center;
+}
+
+.endpop .border .description{
+    width:100%;
+    
+    clear:both;
+    text-align: center;   
+}
+
+.endpop .confirm{
+    justify-content: center;
+    display:flex;
+}
+
+.endpop button{
+    background-color: rgb(52, 99, 255);
+    color:white;
+    width: 150px;
+    border-radius: 5px;
+    border:transparent;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.endpop button:hover{
+    background-color: rgb(1, 20, 85);
+}

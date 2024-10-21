@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../CSS/purchase/purchase1.css">
+  <title>purchase1</title>
+</head>
+
+<body>
+  <!-- purchase1 -->
+  <div class="purchase1">
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <main>
+          <div class="maindan">
+            <header class="header">
+              <div class="top">
+                <a class="logo_pic" id="logo_picMain" onclick="window.open('../../HTML/mainpage/main.html')">
+                  <img src="../../img/withDreamLogo2.png" alt="logo">
+                </a>
+                <div class="jlmToBtn">
+                  <button type="button" id="joinBtn"
+                    onclick="window.open('../../HTML/login-join/join.html')">Join</button>
+                  <button type="button" id="loginBtn"
+                    onclick="window.open('../../HTML/login-join/login.html')">Login</button>
+                  <button type="button" id="mypageBtn" onclick="window.open('../../HTML/mypage/mypage.html')"
+                    style="display:none;">MyPage</button>
+                  <button type="button" id="logoutBtn" style="display:none;">Logout</button>
+                </div>
+              </div>
+              <div class="scroll">
+                <div class="menu">
+                  <ul class="menu_inner">
+                    <a href="../../HTML/mypage/mypage.html"></a>
+                    <li id="purchase1ToHome" onclick="window.open('../../HTML/mainpage/main.html')">홈</li>
+                    <li id="purchase1ToRegister" onclick="window.open('../../HTML/mainpage/pagelist.html')">펀딩 리스트
+                    </li>
+                    <li id="purchase1Toend" onclick="window.open('../../HTML/register/end.html')">종료 펀딩</li>
+                    <li id="purchase1Topurchase_1" onclick="window.open('../../HTML/purchase/purchase1.html')">작품 구매
+                    </li>
+                  </ul>
+                </div>
+            </header>
+
+            <!-- 슬라이드 시작 -->
+            <div class="sildeshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../../img/가로작품5 (5).jpg" style="height: 500px;" width="100%">
+                <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../../img/가로작품6 (6).jpg" style="height: 500px;" width="100%">
+                <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../../img/가로작품7 (7).jpg" style="height: 500px;" width="100%">
+                <div class="text"></div>
+              </div>
+
+              <!-- 다음버튼 -->
+              <a class="prev" onclick="plusSlides(-1)">
+                < <a class="next" onclick="plusSlides(1)">>
+              </a>
+            </div>
+            <br>
+
+            <!-- 서클버튼 다음 -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- 슬라이드 끝 -->
+
+            <div class="purchase-items">
+              <p>작품구매</p>
+            </div>
+            <div class="portfolio-me">
+              <a href="../../HTML/purchase/purchasepage.html">
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품2 (2).jpg" id="">
+                  <strong id="name">자연의 사진가</strong>
+                  <strong id="product_name">아마존의 하루</strong>
+                  <strong id="cost">160,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (7).jpg" alt="">
+                  <strong id="name">구르미 그린 작가</strong>
+                  <strong id="product_name">데칼코마니</strong>
+                  <strong id="cost">130,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (6).jpg" alt="">
+                  <strong id="name">클래식 애호가</strong>
+                  <strong id="product_name">고요한 백조</strong>
+                  <strong id="cost">70,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (3).jpg" alt="">
+                  <strong id="name">John</strong>
+                  <strong id="product_name">자연의 즐거움</strong>
+                  <strong id="cost">30,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (4).jpg" alt="">
+                  <strong id="name">아서</strong>
+                  <strong id="product_name">아름다운 밤 하늘</strong>
+                  <strong id="cost">500,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (5).jpg" alt="">
+                  <strong id="name">김홍인</strong>
+                  <strong id="product_name">그림같은 데칼코마니</strong>
+                  <strong id="cost">2,000,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (2).jpg" alt="">
+                  <strong id="name">이연희</strong>
+                  <strong id="product_name">내 인생의 꽃</strong>
+                  <strong id="cost">60,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품10 (1).jpg" alt="">
+                  <strong id="name">north</strong>
+                  <strong id="product_name">오로라 밤하늘</strong>
+                  <strong id="cost">500,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품9 (1).jpg" alt="">
+                  <strong id="name">Alice</strong>
+                  <strong id="product_name">modern best pictures</strong>
+                  <strong id="cost">200,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/ural-owl-8418249_640.jpg" alt="">
+                  <strong id="name">이한길</strong>
+                  <strong id="product_name">부엉이의 삶</strong>
+                  <strong id="cost">100,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품10 (2).jpg" alt="">
+                  <strong id="name">David</strong>
+                  <strong id="product_name">tree life</strong>
+                  <strong id="cost">50,000원</strong>
+                </div>
+                <div class="portfolio-inner">
+                  <img src="../../img/가로작품10 (3).jpg" alt="">
+                  <strong id="name">Dark</strong>
+                  <strong id="product_name">할리우드를 가다</strong>
+                  <strong id="cost">180,000원</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <div class="explain">
+      <hr class="linee" width="100%" color="black">
+      <br><br>
+      <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+        <br><br>
+        이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+      </p>
+      <p class="companyx">
+        직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+
+        직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+    </div>
+    <!-- purchase1 -->
+
+    <script src="../../JS/purchase/purchase1.js"></script>
+    <script src="../../js/mainpage/common.js"></script>
+</body>
+
+</html>

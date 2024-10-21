@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>데이터 초기화</title>
+    </head>
+    <body>
+        <h2>입력 데이터 초기화 버튼 + value값 설정</h2>
+        <form action="page.jsp" method="get">
+            <!--reset은 리셋이 아닌 초기값으로 돌아가는 것-->
+            <p>지점 : <input type="text" name="branch" value="천안"></p>
+            <p>이름 : <input type="text" name="name"></p>
+            <p>과정 : <input type="text" name="major"></p>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+        </form>
+    </body>
+</html>

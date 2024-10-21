@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/register/register.css">
+    <title>펀딩 등록 화면</title>
+</head>
+
+<body>
+    <!-- register 시작 -->
+    <div class="register">
+        <div class="img">
+            <a class="logo" href="../../HTML/mainpage/main.html">
+                <img src="../../img/withDreamLogo2.png">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="fund">세상에 하나뿐인 특별한 자신만의 펀딩을 등록해 보세요</div>
+        </div>
+        <div class="content">
+            <form class="description">
+                <div class="wrapper">
+                    <h2>펀딩 주제</h2>
+                    <textarea class="theme" placeholder="펀딩 주제를 작성해주세요"></textarea>
+                    <h2>펀딩 설명</h2>
+                    <textarea class="details" placeholder="펀딩 설명을 작성해주세요"></textarea>
+                    <!-- 추가버튼 -->
+                    <div id="survey_options">
+                        <!-- <textarea name="survey_options[]" class="survey_options" placeholder="Name">
+                    </textarea>
+                    <textarea name name="survey_options[]" class="survey_options" placeholder="Email">
+                    </textarea>
+                    <textarea name name="survey_options[]" class="survey_options"placeholder="Another Field"></textarea> -->
+                    </div>
+                    <div class="controls">
+                        <a href="#" id="add_more_fields"><i class="fa fa-plus"></i>설명 추가하기</a>
+                        <a href="#" id="remove_fields"><i class="fa fa-minus"></i>설명 지우기</a>
+                    </div>
+                </div>
+                <!-- 추가버튼 끝 -->
+                <div class="buttons">
+                    <div class="filebox" onclick="document.querySelector('input[type=file]').click();">
+                        <input type="file" onchange="setThumbnail(this);" accept="image/*" multiple>
+                        <span>이미지 업로드</span>
+                        <div id="image_container"></div> <!-- 이미지 미리보기 -->
+                    </div>
+                </div>
+                <h2>펀딩 상세 정보 입력</h2>
+                <br>
+                <br>
+                <!-- info,add는 id product-info인풋박스 스타일-->
+                <div class="info">
+                    <div class="add">
+                        <label>금액:</label>
+                        <input class="addbutton" type="text" id="quantitypirceInput" placeholder="금액 입력">
+                        <label>상품명:</label>
+                        <input class="addbutton" type="text" id="productNameInput" placeholder="상품명 입력">
+                        <label>수량:</label>
+                        <input class="addbutton" type="text" id="quantityInput" placeholder="수량 입력">
+                    </div>
+
+                    <!-- 상품 정보 추가 버튼 -->
+                    <button class="duplicate" id="addProductBtn">
+                        +상품 정보 추가하기
+                    </button>
+
+                    <!-- 상품 정보가 추가될 곳 -->
+                    <div id="productInfoContainer"></div>
+
+                    <br><br><br>
+
+                    <div class="add">
+                        <label>기간:</label>
+                        <input class="addbutton" type="text" id="periodInput" placeholder="YY.MM.DD ~ YY.MM.DD">
+                        <label>목표금액:</label>
+                        <input class="addbutton" type="text" id="targetAmountInput" placeholder="금액 입력">
+                    </div>
+
+                    <button class="duplicate" onclick="validateAndShowRegister();">
+                        등록하기
+                    </button>
+                </div>
+        </div>
+
+        <div class="tip">
+            <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 올릴 수 없습니다.</h4>
+            <h4>※가이드라인에 따라 부적절한 이미지는 임의로 수정되거나 삭제될 수 있습니다.</h4>
+            <!-- 클릭시 팝업 -->
+        </div>
+        <!-- 회사정책 구분선 -->
+        <div class="explain">
+            <div class="line"></div>
+            <br><br>
+            <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+                <br><br>
+                이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+            </p>
+            <p class="companyx">
+                직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+
+                직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+        </div>
+        </form>
+    </div>
+    </div>
+    <script src="../../JS/register/upload.js"></script>
+    <script src="../../JS/register/register.js"></script>
+    <script src="../../JS/register/registerScript.js"></script>
+    <script src="../../JS/register/10registerclone.js"></script>
+</body>
+<!-- 김건우 register 끝 -->
+
+</html>

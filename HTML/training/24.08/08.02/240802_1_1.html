@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 disabled, readonly, maxlength, checked, placeholdr 속성</title>
+    </head>
+    <body>
+        <h2>disabled 속성</h2>
+        <input type="text" disabled><br>
+        <button type="button" disabled>비활성</button><br>
+        <br>
+        
+        <h2>readonly 속성</h2><br>
+        <input type="password" readonly><br>
+        <textarea readonly></textarea><br>
+        <br>
+
+        <h2>maxlength 속성</h2><br>
+        <input type="url" maxlength="4"><br>
+        <textarea maxlength="4"></textarea>
+        <br>
+
+        <h2>checked 속성</h2><br>
+        <fieldset>
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="banana" name="banana" value="banana">
+            <label for="banana">banana</label><br>
+            <input type="checkbox" id="apple" name="apple" value="apple">
+            <label for="apple">apple</label><br>
+            <input type="checkbox" id="orange" name="orange" value="orange" checked>
+            <label for="orange">orange</label><br>
+        </fieldset>
+        <br>
+        <h2>placeholder 속성</h2>
+        <input type="tel" placeholder="전화번호를 입력해 주세요">
+    </body>
+</html>

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+
+body {
+    background-color: #FCFCFC;
+}
+
+span {
+    color: dimgray;
+}
+
+.pop-up {
+    position: fixed;
+    margin: 5% auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.box {
+    height: 400px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: "Gowun Dodum", sans-serif;
+
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    margin: 0 auto;
+    background-color: #FF8566;
+    margin-bottom: 33px;
+    border: white;
+    border-radius: 8px;
+    width: 300px;
+    height: 50px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+h3 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    background-color: #FF704D;
+}
+
+h2 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+
+h1 {
+    color: dimgray;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}

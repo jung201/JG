@@ -1,0 +1,349 @@
+/* login */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.left {
+    float: left;
+    width: 50%;
+
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.right img {
+    height: 900px;
+}
+
+.inputput {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+
+/* 전체 스타일 */
+.pwfindPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 링크 색깔 */
+.pwfindPage a {
+    color: rgb(16, 63, 134);
+}
+
+/* 메인 로고 */
+.pwfindPage .pwfindLogo div.pwfindLogoPic {
+    cursor: pointer;
+    margin-top: 57px;
+}
+
+.pwfindPage .pwfindLogo div.pwfindLogoPic img {
+    width: 80%;
+}
+
+/* form 스타일 */
+.pwfindPage form fieldset {
+    width: 500px;
+    border: none;
+}
+
+/* input 스타일 */
+.pwfindPage form fieldset div.inputBox {
+    position: relative;
+    margin-top: 60px;
+}
+
+.pwfindPage form fieldset div.inputBox input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #aaaaaa;
+    padding: 5px;
+    font-size: 16px;
+    color: #222;
+    outline: none;
+}
+
+/* 레이블 스타일 */
+.pwfindPage form fieldset div.inputBox label {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+/* 레이블 효과 */
+.pwfindPage form fieldset div.inputBox input:focus+label,
+.pwfindPage form fieldset div.inputBox input:valid+label {
+    font-size: 16px;
+    bottom: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+/* span 강조선 스타일 */
+.pwfindPage form fieldset div.inputBox span {
+    display: block;
+    position: absolute;
+    background-color: #706f6f;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+/* 스팬 효과 */
+.pwfindPage form fieldset div.inputBox input:focus~span,
+.pwfindPage form fieldset div.inputBox input:valid~span {
+    width: 100%;
+}
+
+/* 버튼 스타일 */
+.pwfindPage form fieldset div.pwfindBtn button {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 44, 190);
+    color: white;
+    font-size: 20px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+    display: inline-block;
+    /* box-shadow: 0 0 40px 40px #4d4bc4 inset; */
+    /* transition: all 250ms ease-in-out; */
+    transition: 0.5s
+}
+
+/* 버튼 호버 스타일 */
+.pwfindPage form fieldset div.pwfindBtn button:hover {
+    background-color: rgb(0, 26, 111);
+    /* box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212); */
+}
+
+/* 버튼 아래 부분 */
+.pwfindPage form fieldset div.inputpwfind {
+    margin-top: 20px;
+}
+
+
+/* 버튼 아래 부분 */
+.pwfindPage form fieldset div.inputpwfind {
+    margin-top: 20px;
+}
+
+.pwfindPage .find {
+    text-align: left;
+}
+
+/* input 유효성 확인 멘트 스타일 */
+.pwfindPage form fieldset div.warning {
+    margin-top: 5px;
+    color: rgb(230, 35, 35);
+}
+
+.pwfindPage form fieldset div.inputBox .warning {
+    position: absolute;
+}
+
+/* 태블릿 미디어 쿼리 */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+    .left {
+        float: left;
+        width: 50%;
+    }
+
+    .right {
+        float: right;
+        width: 50%;
+    }
+
+    .right img {
+        width: auto; /* 가로 비율 유지 */
+        height: 100vh;
+    }
+
+    .inputput {
+        margin-top: 15%; /* 로그인 창 높이를 조금 줄임 */
+        margin-bottom: 15%; /* 로그인 창 높이를 조금 줄임 */
+    }
+
+    /* 전체 스타일 */
+    .pwfindPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Gowun Dodum", sans-serif;
+    }
+
+    /* 링크 색깔 */
+    .pwfindPage a {
+        color: rgb(16, 63, 134);
+    }
+
+    /* 메인 로고 */
+    .pwfindPage .pwfindLogo div.pwfindLogoPic {
+        cursor: pointer;
+        margin-top: 57px;
+    }
+
+    .pwfindPage .pwfindLogo div.pwfindLogoPic img {
+        width: 80%;
+    }
+
+    /* form 스타일 */
+    .pwfindPage form fieldset {
+        width: 300px; /* 너비 조정 */
+        border: none;
+    }
+
+    /* input 스타일 */
+    .pwfindPage form fieldset div.inputBox {
+        position: relative;
+        margin-bottom: 80px;
+        width: 100%; /* 입력창 너비 조정 */
+    }
+
+    .pwfindPage form fieldset div.inputBox input {
+        width: 100%; /* 입력창 너비 */
+        border: none;
+        border-bottom: solid 1px #aaaaaa; /* 언더바 스타일 */
+        padding: 8px; /* 패딩을 늘려 입력창을 더 길게 함 */
+        font-size: 16px;
+        color: #222;
+        outline: none;
+    }
+
+    /* 레이블 스타일 */
+    .pwfindPage form fieldset div.inputBox label {
+        position: absolute;
+        color: #aaa;
+        left: 10px;
+        font-size: 20px;
+        transition: all .3s;
+    }
+
+    /* 레이블 효과 */
+    .pwfindPage form fieldset div.inputBox input:focus+label,
+    .pwfindPage form fieldset div.inputBox input:valid+label {
+        font-size: 16px;
+        bottom: 40px;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* span 강조선 스타일 */
+    .pwfindPage form fieldset div.inputBox span {
+        display: block;
+        position: relative;
+        background-color: #706f6f;
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        transition: 0.5s;
+    }
+
+    /* 스팬 효과 */
+    .pwfindPage form fieldset div.inputBox input:focus~span,
+    .pwfindPage form fieldset div.inputBox input:valid~span {
+        width: 100%;
+    }
+
+    /* 버튼 스타일 */
+    .pwfindPage form fieldset div.pwfindBtn button {
+        width: 75%; /* 버튼 너비를 언더바의 75%로 설정 */
+        height: 50px; /* 버튼 높이 설정 */
+        border: 1px solid white;
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        background-color: rgb(0, 44, 190);
+        color: white;
+        font-size: 22px; /* 글씨 크기 */
+        font-family: "Gowun Dodum", sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    /* 버튼 호버 스타일 - 배경색 변경 없음 */
+    .pwfindPage form fieldset div.pwfindBtn button:hover {
+        background-color: rgb(0, 44, 190); /* 호버 시 배경색 유지 */
+    }
+
+    /* 버튼 아래 부분 */
+    .pwfindPage form fieldset div.inputpwfind {
+        margin-top: 20px;
+    }
+
+    .pwfindPage .find {
+        text-align: left;
+    }
+
+    /* input 유효성 확인 멘트 스타일 */
+    .pwfindPage form fieldset div.warning {
+        margin-top: 5px;
+        color: rgb(230, 35, 35);
+    }
+
+    .pwfindPage form fieldset div.inputBox .warning {
+        position: absolute;
+    }
+}
+
+/* 태블릿 미디어 쿼리 끝*/
+
+/* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1800px) {
+    .left {
+        padding-left: 200px;
+    }
+
+    .right img {
+        width: 89.5%;
+    }
+}
+
+@media only all and (min-width: 2560px) {
+    .left {
+        padding-left: 200px;
+        
+    }
+
+    .right img {
+        width: 89.5%;
+        height:100vh;
+    }
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <style>
+        .red-color {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.gilbut.co.kr/">길벗</a><br>
+    <a href="https://www.daum.net/" data-link="다음" id="a1">다음</a><br>
+    <a href="https://www.gilbut.co.kr/" class="red-color" id="a2">길벗(Red)</a><br>
+    <script>
+        const aEl = document.querySelector("a");
+        const href = aEl.getAttribute("href");
+        console.log(href);
+
+        aEl.setAttribute("href", "https://www.sucoding.kr");
+        aEl.innerText = "수코딩";
+
+        aEl.setAttribute("target", "_blank");
+
+        const aEl1 = document.querySelector("#a2");
+        aEl1.setAttribute("data-link", "다다음");
+        aEl.setAttribute("class", "red-color");
+
+        const aE12 = document.querySelector("#a2");
+        aEl2.removeAttribute("class");
+    </script>
+</body>
+
+</html>

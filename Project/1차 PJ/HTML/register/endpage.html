@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../CSS/register/endpageclone.css">
+  <title>endpage</title>
+</head>
+
+<body>
+  <!-- endpage -->
+  <div class="endpage">
+
+    <header class="header">
+      <div class="top">
+        <div class="logo_pic" id="logo_picMain">
+          <img src="../../img/withDreamLogo2.png" alt="logo">
+        </div>
+        <div class="jlmToBtn">
+          <button type="button" id="joinBtn">Join</button>
+          <button type="button" id="loginBtn">Login</button>
+          <button type="button" id="mypageBtn" style="display:none;">MyPage</button>
+          <button type="button" id="logoutBtn" style="display:none;">Logout</button>
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="menu">
+          <ul class="menu_inner">
+            <li id="endpageToHome">홈</li>
+            <li id="endpageToList">펀딩 리스트</li>
+            <li id="endpageToend">종료 펀딩</li>
+            <li id="endpageTopurchase_1">작품 구매</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- 슬라이드 시작 -->
+    <div class="sildeshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="../../img/가로작품5 (5).jpg" style="height: 500px;" width="100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="../../img/가로작품6 (6).jpg" style="height: 500px;" width="100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="../../img/가로작품7 (7).jpg" style="height: 500px;" width="100%">
+        <div class="text"></div>
+      </div>
+      <!-- 서클버튼 다음 -->
+      
+    </div>
+    <!-- 슬라이드 끝 -->
+
+    <div class="infoLeft">
+      <div class="exhibition">전시회 정보</div>
+      <table class="exhibitionInfo">
+        <tr>
+          <th>전시 기간</th>
+          <td>2024. 10. 01 ~ 2024. 10. 10</td>
+        </tr>
+        <tr>
+          <th>장소</th>
+          <td>천안 삼거리 갤러리 / 충남 천안시 동남구 천안대로 400 차량등록사업소 3층</td>
+        </tr>
+        <tr>
+          <th>주제</th>
+          <td>빛과 그림자의 대화</td>
+        </tr>
+        <tr>
+          <th>관람 인원 수</th>
+          <td>167 명</td>
+        </tr>
+      </table>
+    </div>
+    <!-- 전시회 정보 노출 -->
+
+    <div class="infoRight">
+      <div class="creator">창작자 프로필 정보</div>
+      <table class="creatorInfo">
+        <tr>
+          <th>이름</th>
+          <td>구르미 그린 나</td>
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td>qwer1234@gmail.com</td>
+        </tr>
+        <tr>
+          <th>홈페이지</th>
+          <td>blog.naver.com/qwer1234</td>
+        </tr>
+        <tr>
+          <th>SNS</th>
+          <td>instargram: @qwer1234</td>
+        </tr>
+        <tr>
+          <th>펀딩 성공 횟수</th>
+          <td>1회</td>
+        </tr>
+      </table>
+    </div>
+    <!-- 작가 프로필 정보 노출 -->
+
+    <div class="linkBtn">
+      <input class="statement" type="button" value="금액사용내역" onclick="showPopup();" />
+      <input class="purchase" type="button" value="작품구매" onclick="showPurchasePopup();" />   
+    </div>
+    <!-- 금액 사용 내역 버튼 -->
+
+    <!-- 커뮤니티(댓글) 기능 -->
+    <div class="community">
+      <ul class="comment">
+        <li class="comment-form">
+          <form id="commentFrm">
+            <h4>댓글쓰기 <span></span></h4>
+            <span class="ps_box">
+              <input type="text" placeholder="댓글 내용을 입력해주세요." class="int" name="content" />
+            </span>
+            <input type="submit" class="btn" value="등록" />
+          </form>
+        </li>
+        <li id="comment-list"></li>
+      </ul>
+    </div>
+
+    <div class="reviewImg">
+      <div class="announcement">전시회 후기 사진을 등록해 주세요</div>
+      <div class="tip">
+        <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 올릴 수 없습니다.</h4>
+        <h4>※가이드라인에 맞지 않는 이미지는 임의로 수정될 수 있습니다.</h4>
+        <!-- 클릭시 팝업 -->
+      </div>
+      <div class="upload-btn-wrapper">
+        <button class="btn">파일 업로드
+          <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple />
+        </button>
+        <div id="image_container"></div>
+      </div>
+    </div>
+    <div class="explain">
+      <div class="line"></div>
+      <br><br>
+      <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+        <br><br>
+        이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+      </p>
+      <p class="companyx">
+        직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+
+        직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+    </div>
+  </div>
+  </div>
+  <!-- endpage -->
+  <script src="../../JS/register/endPage.js"></script>
+  <script src="../../js/mainpage/common.js"></script>
+</body>
+</html>

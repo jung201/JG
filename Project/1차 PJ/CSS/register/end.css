@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* end 시작  */
+
+.end {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 상단 로고 */
+
+.end header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end header .logo_pic {
+  width: 65%;
+  cursor: pointer;
+}
+
+.end header .logo_pic img {
+  width: 50%;
+}
+
+.end header .jlmToBtn {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.end header .jlmToBtn button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.end header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
+.end header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+.end header .scroll .menu {
+  width: 80%;
+}
+
+.end header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+.end header .menu li {
+  width: 18%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.end header .menu li:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+
+/* 메인부분 */
+.end .mainComment {
+  width: 100%;
+  margin-top: 120px;
+  display: block;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.end .mainComment .left {
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.end .mainComment .left span {
+  color: blue;
+}
+
+.end .mainComment .right {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.end .subComment {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+
+/* section */
+
+.end section .pic_container {
+  width: 100%;
+  display: flex;
+  height: 1250px;
+}
+
+.end section .pic_container .pic_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: transform 0.5s ease-in-out;
+}
+
+.end section .pic_container .pic_list .inner {
+  width: 30%;
+  height: 370px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-right: 10px;
+}
+
+/* section pic 사진 */
+.end section .pic_container .pic_list img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.end section .pic_container .pic_list .inner:hover img {
+  transform: scale(1.05);
+}
+
+/* section pic 작가, 제목부분 */
+.end section .pic_container .pic_list .inner .comment {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+}
+
+/* section pic 작가부분 */
+.end section .pic_container .pic_list .inner .author {
+  font-size: 16px;
+}
+
+/* section pic 제목부분 */
+.end section .pic_container .pic_list .inner .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* section pic 제목부분 */
+.end section .pic_container .pic_list .inner .buying {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  text-align: right;
+  margin-top: 10px;
+  color: blue;
+  cursor: pointer;
+}
+
+/* 슬라이드 버튼 */
+
+.end .btn_container {
+  position: relative;
+}
+
+.end .btn_container button {
+  all: unset;
+  position: relative;
+  color: black;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* 슬라이드 왼쪽 버튼 위치 */
+.end .btn_container .prevBtn {
+  left: 400px;
+}
+
+/* 서브 슬라이드 오른쪽 버튼 위치 */
+.end .btn_container .nextBtn {
+  left: 600px;
+}
+
+.end .explain {
+  margin-top: 100px;
+}
+
+
+
+/* 미디어쿼리 */
+
+@media only all and (min-width: 1500px) {
+  .end {
+    margin: 20px 150px;
+  }
+
+  /* 상단 로고 */
+  .end header .logo_pic img {
+    position: relative;
+    top: -20px;
+  }
+
+  /* 우측 서치부분 */
+  .end header .search {
+    width: 35%;
+  }
+
+  .end .maindComment {
+    font-size: 40px;
+    margin: 100px 0px;
+  }
+
+  .end .subComment {
+    font-size: 22px;
+    position: relative;
+    top: 70px;
+    left: 30px;
+  }
+
+  .end section .pic_container {
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  .end section .pic_container .pic_list img {
+    height: 300px;
+  }
+
+  /* section 멘트 */
+  .end section .pic_container .maindComment {
+    margin-top: 30px;
+  }
+
+  /* section pic */
+  .end section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  /* section pic 작가부분 */
+  .end section .pic_container .pic_list .inner .author {
+    font-size: 16px;
+  }
+
+  /* section pic 제목부분 */
+  .end section .pic_container .pic_list .inner .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* section pic 작품구매 */
+  .end section .pic_container .pic_list .inner .buying {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  /* 슬라이드 버튼 */
+
+  .end .btn_container {
+    width: 95%;
+    text-align: center;
+    position: relative;
+    bottom: 220px;
+  }
+
+  .end .btn_container button {
+    bottom: 0px;
+  }
+
+  /* 슬라이드 왼쪽 버튼 위치 */
+  .end .btn_container .prevBtn {
+    left: 0px;
+  }
+
+  /* 서브 슬라이드 오른쪽 버튼 위치 */
+  .end .btn_container .nextBtn {
+    left: 100px;
+  }
+}
+
+
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+  .end header .search {
+    width: 50%;
+  }
+
+  .end header .scroll .menu {
+    width: 80%;
+  }
+
+  .end header .scroll .menu .menu_inner {
+    width: 130%;
+    height: 70px;
+  }
+
+  .end header .menu li {
+    font-size: 18px;
+  }
+
+  .end header .jlmToBtn {
+    width: 25%;
+  }
+
+  .end header .jlmToBtn button {
+    font-size: 18px;
+  }
+
+  .end .maindComment {
+    font-size: 30px;
+  }
+
+  /* section pic 화면구성 */
+  .end section .pic_container {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .end section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  .end section .pic_container .pic_list .inner .title {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .end section .pic_container .pic_list .inner .buying {
+    width: 100%;
+  }
+
+  /* 슬라이드 버튼 */
+
+  .end .btn_container button {
+    bottom: 20px;
+    font-size: 18px;
+  }
+
+  /* 슬라이드 왼쪽 버튼 위치 */
+  .end .btn_container .prevBtn {
+    left: 350px;
+  }
+
+  /* 서브 슬라이드 오른쪽 버튼 위치 */
+  .end .btn_container .nextBtn {
+    left: 450px;
+  }
+}
+
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .end header .jlmToBtn button {
+    font-size: 16px;
+  }
+
+  .end header .menu li {
+    width: 25%;
+    font-size: 15px;
+  }
+
+  .end header .search {
+    width: 87%;
+    display: flex;
+    align-items: center;
+  }
+
+  .end header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  .end header .search i {
+    right: 20px;
+    font-size: 15px;
+  }
+
+  /* section pic 화면구성 */
+  .end section .pic_container {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .end section .pic_container .pic_list img {
+    height: 180px;
+  }
+
+  .end section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  .end section .pic_container .pic_list .inner .author {
+    font-size: 13px;
+  }
+
+  .end section .pic_container .pic_list .inner .title {
+    font-size: 17px;
+  }
+
+  .end section .pic_container .pic_list .inner .buying {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* 슬라이드 버튼 */
+
+  .end .btn_container button {
+    bottom: 20px;
+    font-size: 16px;
+  }
+
+  /* 슬라이드 왼쪽 버튼 위치 */
+  .end .btn_container .prevBtn {
+    left: 260px;
+  }
+
+  /* 서브 슬라이드 오른쪽 버튼 위치 */
+  .end .btn_container .nextBtn {
+    left: 340px;
+  }
+
+}

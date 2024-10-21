@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정규 Login</title>
+    <style>
+        body {
+            width: 500px;
+            margin: auto;
+        }
+
+        fieldset {
+            text-align: center;
+            border: 1px solid;
+            padding: 25px;
+            color: white;
+            background-color: #1d301d;
+        }
+
+        .signup {
+            font-size: 15px;
+            width: 205px;
+            height: 40px;
+            margin: 10px 0px 20px;
+            border: none;
+            color: white;
+            background-color: #5a5858;
+        }
+
+        .login1 {
+            font-size: 15px;
+            width: 205px;
+            height: 40px;
+            margin: 15px 0px;
+            border: none;
+            color: white;
+            background-color: #0aa15b;
+        }
+
+        input {
+            font-size: 15px;
+            text-indent: 1%;
+            width: 400px;
+            height: 40px;
+            margin: 25px 0px 30px;
+            border: 1px solid white;
+            color: white;
+            background-color: #1d301d;
+        }
+
+        .login2 {
+            font-size: 25px;
+            letter-spacing: 1px;
+            width: 410px;
+            height: 50px;
+            margin: 20px 0px 20px;
+            padding: none;
+            border: none;
+            color: white;
+            background-color: #0aa15b;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="#" method="post">
+            <fieldset>
+                <button class="signup" type="button" onclick="location.href='signup.html'">Sign Up
+                    <button class="login1" type="button">Log In</button>
+                    <p>
+                    <h2>Welcome Back!</h2>
+                    </p>
+                    <label><input type="email" name="EmailAddress" placeholder="Email Address *" </label>
+                        <label><input type="password" name="password" placeholder="Password *"></label>
+                        <button class="login2" type="button" onclick="location.href='main.html'">LOG IN</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

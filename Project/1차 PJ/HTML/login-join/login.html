@@ -1,0 +1,77 @@
+<!-- lsh -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/login-join/login.css">
+    <title>로그인 화면</title>
+</head>
+
+<body>
+    <!--로그인 화면 시작-->
+    <div class="login">
+        <div class="left">
+            <div class="loginPage">
+                <div class="loginLogo">
+                    <div class="loginLogoPic">
+                        <img src="../../img/withDreamLogo2.png" id="loginPic" />
+                    </div>
+                </div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <div class="comment">
+                            <h2>세상에 하나뿐인<br />특별한 프로젝트를 발견해 보세요</h2>
+                        </div>
+                        <div class="inputput">
+                            <div class="inputBox">
+                                <input class="email" id="userEmail" type="email" placeholder=" " autocomplete="off"
+                                    required />
+                                <label for="userEmail">Email</label>
+                                <span class="hightlight"></span>
+                                <div class="warning" id="emailWarning"></div>
+                            </div>
+                            <div class="inputBox">
+                                <input class="password" id="userPwd" type="password" placeholder=" " minlength="8"
+                                    maxlength="16" autocomplete="off" required />
+                                <label for="userPwd">Password</label>
+                                <span class="hightlight"></span>
+                                <div class="warning" id="pwdWarning"></div>
+                            </div>
+                        </div>
+                        <div class="loginBtn">
+                            <button type="submit" id="btnlogin">로그인</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="find">
+                    <div class="inputLogin" id="LoginToJoin">
+                        계정이 없으신가요? <a href="../../HTML/login-join/join.html" id="loginToJoin">회원가입 하기</a>
+                    </div>
+
+                    <div class="inputLogin" id="btnpwfind">
+                        아이디를 잊어버리셨나요? <a href="../../HTML/login-join/id-find.html" id="loginToId">아이디 찾기</a>
+                    </div>
+
+                    <div class="inputLogin" id="btnpwfind">
+                        비밀번호를 잊어버리셨나요? <a href="../../HTML/login-join/pwfind.html" id="loginToPw">비밀번호 찾기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../../img/sea-7633152_1280.png">
+        </div>
+    </div>
+    <script src="../../JS/login-join/login.js"></script>
+    <!--login 화면 끝-->
+</body>
+</div>
+
+</html>

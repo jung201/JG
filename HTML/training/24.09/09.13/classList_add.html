@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>classList_add</title>
+        <style>
+            .red-color{
+                color: red;
+            }
+            .fz20 {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="text">text</p>
+        <p id="text1" class="red-color fz20">text1</p>
+        <p id="toggle">toggle</p>
+        <script>
+            const pEl = document.querySelector("#text"); // 노드 선택하기
+            // pEl.classList.add("red-color");
+            // pEl.classList.add("fz20");
+            pEl.classList.add("red-color", "fz20");
+
+            const pEl1 = document.querySelector("#text1");
+            // pEl1.classList.remove("fz20");
+            pEl1.classList.remove("red-color", "fz20");
+
+            const pEl2 = document.querySelector("#toggle");
+                setInterval(function(){
+                    pEl2.classList.toggle("red-color");
+                    pEl2.classList.toggle("fz20");
+                }, 1000); // 단위는 ms
+        </script>
+    </body>
+</html>

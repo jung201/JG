@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        :root {
+            --bg-color: #2c3431;
+            --active: #2da268;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#main {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-color);
+            margin: auto;
+        }
+
+        h3#welcome {
+            font-size: 24px;
+            font-weight: normal;
+            color: white;
+            background-color: var(--active);
+            padding: 10px 40px;
+            border-radius: 15px;
+            opacity: 0;
+            transition: opacity 3s;
+        }
+
+        h3#welcome.appear {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h3 id="welcome">Welcome to Webpage!</h3>
+    </div>
+    <script>
+        window.onload = () => {
+            const target = document.querySelector("#welcome");
+            target.classList.add("appear");
+        }
+    </script>
+</body>
+
+</html>

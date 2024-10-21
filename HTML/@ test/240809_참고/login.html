@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <style>
+        :root {
+            --bg-color: #2c3431;
+            --active: #2da268;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 500px;
+            background-color: var(--bg-color);
+            padding: 30px;
+            margin: auto;
+        }
+
+        nav#buttons {
+            display: flex;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            height: 40px;
+            font-size: 16px;
+            color: white;
+            background-color: #424744;
+            border: 0;
+        }
+
+        button.active {
+            background-color: var(--active);
+        }
+
+        h3#title {
+            font-size: 24px;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+        }
+
+        div.inputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            height: 36px;
+            font-size: 16px;
+            color: white;
+            background-color: transparent;
+            padding: 0 10px;
+            border: 1px solid #6e7a73;
+        }
+
+        button#join {
+            width: 100%;
+            height: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="./main.html">
+        <nav id="buttons">
+            <button type="button" id="sign-up">Sign Up</button>
+            <button type="button" id="sign-in" class="active">Log In</button>
+        </nav>
+        <h3 id="title">Welcome Back!</h3>
+        <div class="inputs">
+            <input type="email" id="email" placeholder="Email Address *" required />
+            <input type="password" id="password" placeholder="Password *" required />
+        </div>
+        <button type="submit" id="join" class="active">LOG IN</button>
+    </form>
+    <script>
+        const signUp = document.querySelector("#sign-up");
+        signUp.onclick = () => location.href = "./signup.html";
+
+        const signIn = document.querySelector("#sign-in");
+        signIn.onclick = () => location.href = "#";
+    </script>
+</body>
+
+</html>

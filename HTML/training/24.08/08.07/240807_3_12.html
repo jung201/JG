@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 keyframes</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                animation-name: bgchange;
+                animation-duration: 10s;
+            }
+            @keyframes bgchange{
+                0%{background-color: red; ;}
+                25%{background-color: orange;}
+                50%{background-color: yellow;}
+                100%{background-color: green;}
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

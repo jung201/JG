@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagelist</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/mainpage/pagelist.css">
+</head>
+
+<body>
+    <!--pagelist 화면 시작-->
+    <div class="pagelist">
+        <header class="header">
+            <div class="top">
+                <div class="logo_pic" id="logo_picMain">
+                    <img src="../../img/withDreamLogo2.png" alt="logo">
+                </div>
+                <div class="jlmToBtn">
+                    <button type="button" id="joinBtn">Join</button>
+                    <button type="button" id="loginBtn">Login</button>
+                    <button type="button" id="mypageBtn" style="display:none;">MyPage</button>
+                    <button type="button" id="logoutBtn" style="display:none;">Logout</button>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="menu">
+                    <ul class="menu_inner">
+                        <li id="ToHome">홈</li>
+                        <li id="ToList">펀딩 리스트</li>
+                        <li id="Toend">종료 펀딩</li>
+                        <li id="Topurchase_1">작품 구매</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 상단 멘트부분  -->
+        <div class="mainComment">
+            <div class="left">
+                좋은 아이디어를 가지고 있으신가요?<br>
+                <span>직박구리와 함께 마음 속<br> 프로젝트를 실현하세요</span>
+            </div>
+            <div class="right">
+                <img src="../../img/withDreamLogo2.png">
+            </div>
+        </div>
+        <div class="con">
+            <div class="subComment">24개의 펀딩이 있습니다.</div>
+            <select class="filter">
+                <option value="추천순">추천순</option>
+                <option value="등록순">등록순</option>
+                <option value="마감임박">마감임박</option>
+                <option value="달성률">달성률</option>
+            </select>
+        </div>
+
+        <!-- 내용시작 -->
+        <section>
+            <div class="pic_container">
+                <div class="pic_list">
+                    <div class="inner">
+                        <img src="../../img/사진60.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">Placeholder</div>
+                            <div class="title">같지만 다른 우리,</div>
+                            <div class="account">철없던 시절 우리들만의 추억이야기</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>40%</span>889,000원</div>
+                            <div>25일 남음</div>
+                        </div>
+                        <progress class="bar" value="40" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진52.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">잔도스케르</div>
+                            <div class="title">로판 주인공 빙의 프로필 촬영</div>
+                            <div class="account">내가 로맨틱 판다지 주인공이 된다면, 어떤 주인공으로 빙의하게 될까?</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>17%</span>92,000원</div>
+                            <div>65일 남음</div>
+                        </div>
+                        <progress class="bar" value="17" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진53.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">또돋이</div>
+                            <div class="title">빛나는 순간의 너에게 전하는 엽서집</div>
+                            <div class="account">이미 충분히 빛나고 있는 너에게 전하고 싶은 위로와 응원의 메세지를 담은 엽서집</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>70%</span>1,840,000원</div>
+                            <div>65일 남음</div>
+                        </div>
+                        <progress class="bar" value="70" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진43.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">La bastille</div>
+                            <div class="title">있는 그대로의 내 모습을 사랑하게</div>
+                            <div class="account">No Make up&No Photoshop 'Just Me' 나답게 살아가기</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>88%</span>1,302,000원</div>
+                            <div>15일 남음</div>
+                        </div>
+                        <progress class="bar" value="88" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="pic_list">
+                    <div class="inner">
+                        <img src="../../img/사진55.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">SILVER JO</div>
+                            <div class="title">당신의 별</div>
+                            <div class="account">당신의 사소한 말이 가끔은 내게 별이 되기도 해요</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>210%</span>4,459,000원</div>
+                            <div>14일 남음</div>
+                        </div>
+                        <progress class="bar" value="100" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진56.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">Javascript</div>
+                            <div class="title">창작자용 찐만능 필터 2탄!!</div>
+                            <div class="account">No Make up&No Photoshop 'Just Me' 나답게 살아가기</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>33%</span>241,000원</div>
+                            <div>28일 남음</div>
+                        </div>
+                        <progress class="bar" value="33" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진58.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">humanJackson</div>
+                            <div class="title">[SPAIN: LOVE AND OURAGE]</div>
+                            <div class="account">필름으로 기록한 파리 산책 Paul a Paris</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>265%</span>6,319,000원</div>
+                            <div>11일 남음</div>
+                        </div>
+                        <progress class="bar" value="100" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진57.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">서연 스튜디오</div>
+                            <div class="title">To Europe, To you Love</div>
+                            <div class="account">너에게 보내는 단 하나의 러브레터, '유럽, 네 모든 색을 사랑해'</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>21%</span>239,000원</div>
+                            <div>34일 남음</div>
+                        </div>
+                        <progress class="bar" value="21" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="pic_list">
+                    <div class="inner">
+                        <img src="../../img/배경11.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">DABA</div>
+                            <div class="title">내 모든 발걸음의 목적</div>
+                            <div class="account">단 하나라도, 낭만 품고 살기 낭만을 찍은 엽서북</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>45%</span>549,000원</div>
+                            <div>16일 남음</div>
+                        </div>
+                        <progress class="bar" value="45" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진35.jpeg" alt="img1">
+                        <div class="comment">
+                            <div class="author">HtmlCss</div>
+                            <div class="title">같고도 다른, 다르고도 같은</div>
+                            <div class="account">아직 어른이 되어가는 삶의 공통된 위로</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>66%</span>1,302,000원</div>
+                            <div>18일 남음</div>
+                        </div>
+                        <progress class="bar" value="66" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/배경25.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">humanJackson</div>
+                            <div class="title">바래진 우물 속에서, summer/the states</div>
+                            <div class="account">필름으로 담은 미국의 여름. 엽서집과 마스킹 테이프</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>88%</span>1,302,000원</div>
+                            <div>15일 남음</div>
+                        </div>
+                        <progress class="bar" value="88" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/배경18.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">Try angle</div>
+                            <div class="title">자연이 주는 휴식</div>
+                            <div class="account">희귀한 야생화와 나비, 풍경 엽서북+포스터+마스킹테이프</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>22%</span>302,000원</div>
+                            <div>25일 남음</div>
+                        </div>
+                        <progress class="bar" value="22" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="pic_list">
+                    <div class="inner">
+                        <img src="../../img/사진50.JPG" alt="img1">
+                        <div class="comment">
+                            <div class="author">Placeholder</div>
+                            <div class="title">내 방 한 구석의 여행지,</div>
+                            <div class="account">전 세계 작은 가게를 찾아 떠난 휴먼 여행단의 여정</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>40%</span>889,000원</div>
+                            <div>25일 남음</div>
+                        </div>
+                        <progress class="bar" value="40" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진61.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">블랙필름펑크</div>
+                            <div class="title">한잔,두잔 </div>
+                            <div class="account">오늘일은 내일로 미루고 오늘만 살자 ! 먹고죽자 !</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>17%</span>92,000원</div>
+                            <div>65일 남음</div>
+                        </div>
+                        <progress class="bar" value="17" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/robin-7940556_1920.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">찍찍찍</div>
+                            <div class="title">깜찍한 직박구리의 일상</div>
+                            <div class="account">컴퓨터 폴더안에서만 보던 직박구리의 본체일상,</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>70%</span>1,840,000원</div>
+                            <div>65일 남음</div>
+                        </div>
+                        <progress class="bar" value="70" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진62.jpeg" alt="img1">
+                        <div class="comment">
+                            <div class="author">La bastille</div>
+                            <div class="title">있는 그대로의 내 모습을 사랑하게</div>
+                            <div class="account">No Make up&No Photoshop 'Just Me' 나답게 살아가기</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>88%</span>1,302,000원</div>
+                            <div>15일 남음</div>
+                        </div>
+                        <progress class="bar" value="88" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="pic_list">
+                    <div class="inner">
+                        <img src="../../img/사진63.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">SILVER JO</div>
+                            <div class="title">당신의 별</div>
+                            <div class="account">당신의 사소한 말이 가끔은 내게 별이 되기도 해요</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>210%</span>4,459,000원</div>
+                            <div>14일 남음</div>
+                        </div>
+                        <progress class="bar" value="100" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진64.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">Nineteen</div>
+                            <div class="title">Beolgok</div>
+                            <div class="account">No Make up&No Photoshop 'Beolgok' 나답게 살아가기</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>33%</span>241,000원</div>
+                            <div>28일 남음</div>
+                        </div>
+                        <progress class="bar" value="33" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진65.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">Jackson</div>
+                            <div class="title">Uniram Baniram Tourist Area</div>
+                            <div class="account">운일암 반일암 계곡에서 먹는 맛있는 고기 사진, </div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>265%</span>6,319,000원</div>
+                            <div>11일 남음</div>
+                        </div>
+                        <progress class="bar" value="100" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진64.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">부안 스튜디오</div>
+                            <div class="title">To Buan, To you Love</div>
+                            <div class="account">너에게 보내는 단 하나의 러브레터, '부안, 네 모든 색을 사랑해'</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>21%</span>239,000원</div>
+                            <div>34일 남음</div>
+                        </div>
+                        <progress class="bar" value="21" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="pic_list">
+                    <div class="inner">
+                        <img src="../../img/사진66.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">2020</div>
+                            <div class="title">내 모든 시작</div>
+                            <div class="account">365일 찬란하게 빛나던 나의 2020년, </div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>45%</span>549,000원</div>
+                            <div>16일 남음</div>
+                        </div>
+                        <progress class="bar" value="45" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진67.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">GodQhr</div>
+                            <div class="title">어느 좋은날</div>
+                            <div class="account">견생 처음 장거리여행 안면도 간날, 복이 덕에 복이왔다</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>66%</span>1,302,000원</div>
+                            <div>18일 남음</div>
+                        </div>
+                        <progress class="bar" value="66" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진68.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">행복2</div>
+                            <div class="title">행복이 사진 전시회</div>
+                            <div class="account">우리애기 사진전시회, 여전히 사랑해</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>88%</span>1,302,000원</div>
+                            <div>15일 남음</div>
+                        </div>
+                        <progress class="bar" value="88" max="100"></progress>
+                    </div>
+                    <div class="inner">
+                        <img src="../../img/사진69.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">Try angle</div>
+                            <div class="title">3D Max</div>
+                            <div class="account">3D 오피스 프로젝트, 사진처럼 만들어보고 싶었다</div>
+                        </div>
+                        <div class="bar_text">
+                            <div><span>22%</span>302,000원</div>
+                            <div>25일 남음</div>
+                        </div>
+                        <progress class="bar" value="22" max="100"></progress>
+                    </div>
+                </div>
+        </section>
+
+        <div class="explain">
+            <hr class="linee" width="100%" color="black">
+            <br><br>
+            <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+                <br><br>
+                이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+            </p>
+            <p class="companyx">
+                직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+                직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+        </div>
+    </div>
+    <!--pagelist 화면 끝-->
+
+    <script src="../../js/mainpage/main.js"></script>
+    <script src="../../js/mainpage/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/login-join/id-find.css">
+    <title>아이디 찾기</title>
+</head>
+
+<body>
+    <!--idfind 화면 시작-->
+    <div class="idfind">
+        <div class="left">
+            <div class="idfindPage">
+                <div class="idfindLogo">
+                    <div class="idfindLogoPic">
+                        <img src="../../img/withDreamLogo2.png" id="idfindPic" />
+                    </div>
+                </div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <div class="comment">
+                            <h2>세상에 하나뿐인<br />특별한 프로젝트를 발견해 보세요</h2>
+                        </div>
+                        <div class="inputput">
+                            <div class="inputBox">
+                                <input class="name" id="userName" type="text" placeholder=" " autocomplete="off"
+                                    required>
+                                <label for="userName">Name</label>
+                                <span class="hightlight"></span>
+                                <div class="warning" id="nameWarning"></div>
+                            </div>
+                            <div class="inputBox">
+                                <input class="phone" id="userPhone" type="tel" placeholder=" " maxlength="11"
+                                    autocomplete="off" required>
+                                <label for="userPhone">Phone</label>
+                                <span class="hightlight"></span>
+                                <div class="warning" id="phoneWarning"></div>
+                            </div>
+                            <div class="inputBox">
+                                <input class="authentication" id="useraut" type="text" placeholder=" " maxlength="16"
+                                    autocomplete="off" required />
+                                <label for="userPwd">Authentication </label>
+                                <span class="hightlight"></span>
+                                <div class="warning" id="userautWarning"></div>
+                            </div>
+                        </div>
+                        <div class="idfindBtn">
+                            <button type="submit" id="btnidfind">아이디 찾기</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="find">
+                    <div class="inputidfind">
+                        계정이 없으신가요? <a href="../../HTML/login-join/join.html" id="idfindToJoin">회원가입 하기</a>
+                    </div>
+
+                    <div class="inputLogin">
+                        이미 계정이 있으신가요? <a href="../../HTML/login-join/login.html" id="idfindToId">로그인하기</a>
+                    </div>
+
+                    <div class="inputLogin">
+                        비밀번호를 잊어버리셨나요? <a href="../../HTML/login-join/pwfind.html" id="idfindToPw">비밀번호 찾기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../../img/sea-7633152_1280.png">
+        </div>
+    </div>
+    <script src="../../JS/login-join/idfind.js"></script>
+    <!--idfind 화면 끝-->
+</body>
+
+</html>

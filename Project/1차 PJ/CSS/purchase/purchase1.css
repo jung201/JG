@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+li {
+  list-style: none;
+}
+
+/* purchase1  */
+.purchase1 {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin: 20px;
+}
+
+/* 상단 로고 */
+
+.purchase1 {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header .logo_pic {
+  width: 65%;
+  cursor: pointer;
+}
+
+main header .logo_pic img {
+  width: 50%;
+}
+
+main header .jlmToBtn {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main header .jlmToBtn button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
+main header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+main header .scroll .menu {
+  width: 80%;
+}
+
+main header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+main header .menu li {
+  width: 18%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+main header .menu li:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 메인 */
+
+main .mainBox {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 메인 왼쪽 부분 */
+main .mainBox .left {
+  width: 75%;
+}
+
+/* Main 끝 */
+
+
+/* 슬라이더 */
+* {
+  box-sizing: border-box
+}
+
+.sildeshow-container {
+  max-width: 1000px;
+  width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/* .mySlides{
+    display: none;
+} */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  background-color: none;
+}
+
+/* 다음버튼 */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 1/3 */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} */
+
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* 슬라이드 끝 */
+
+
+/* 작품구매 텍스트 */
+.purchase1 .purchase-items p {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-top: 1px;
+  font-family: "Gowun Dodum", sans-serif;
+  padding: 1rem 1rem 1.5rem 1rem;
+
+}
+
+/* 작품구매 텍스트 끝 */
+
+
+/* 작품구매창 */
+.purchase1 section.portfolio .portfolio-inner {
+  width: 20%;
+  float: left;
+  background-color: #f8f8f8;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.purchase1 section.portfolio .portfolio-inner #name {
+  font-size: 12px;
+  color: gray;
+}
+
+.purchase1 section.portfolio .portfolio-inner #cost {
+  font-size: 18px;
+  color: rgba(0, 89, 255, 0.87);
+}
+
+.purchase1 section.portfolio .portfolio-inner:nth-child(4n) {
+  margin-right: 0;
+}
+
+.purchase1 section.portfolio .portfolio-inner img {
+  width: 230px;
+  height: 250px;
+  display: block;
+  transition-duration: 0.3s;
+  overflow: none;
+}
+
+.purchase1 section.portfolio .portfolio-inner:hover img {
+  transform: scale(1.1);
+}
+
+
+
+.purchase1 section.portfolio .portfolio-inner strong {
+  margin: 0.5rem 0;
+  display: block;
+  font-family: "Gowun Dodum", sans-serif;
+
+}
+
+.purchase1 section.portfolio .portfolio-inner h3 {
+  font-size: 1.75rem;
+}
+
+
+/* 작품구매창 끝 */
+.purchase1 .explain .linee {
+  color: blue;
+
+}
+
+
+/* 미디어쿼리 */
+
+@media only all and (min-width: 1800px) {
+  .purchase1 {
+    margin: 20px 150px;
+  }
+
+  /* 상단 로고 */
+  .purchase1 header .logo_pic img {
+    position: relative;
+    top: -20px;
+  }
+
+  /* 메인 슬라이드 */
+  .purchase1 .mySlides {
+    width: 100%;
+    height: 500px;
+  }
+
+  /* 우측 서치부분 */
+  .purchase1 header .search {
+    width: 30%;
+  }
+
+  .purchase1 .purchase-items p {
+    margin-top: 50px;
+  }
+}
+
+/* 모바일 기기 세로 */
+@media all and (max-width:479px) {
+  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+  }
+
+  a,
+  a:link,
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+
+  }
+
+  li {
+    list-style: none;
+  }
+
+  /* purchase1  */
+
+
+  /* 상단 로고 */
+
+  .purchase1 {
+    height: auto;
+    margin: 30px 100px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  main header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main header .logo_pic {
+    width: 65%;
+    cursor: pointer;
+  }
+
+  main header .logo_pic img {
+    width: 50%;
+
+  }
+
+  main header .jlmToBtn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  main header .jlmToBtn button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  main header .jlmToBtn button:hover {
+    color: orange;
+    font-weight: bold;
+  }
+
+  /* nmenu */
+
+  main header .scroll {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(184, 181, 181);
+  }
+
+  main header .scroll .menu {
+    width: 100%;
+  }
+
+  main header .scroll .menu .menu_inner {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: white;
+    align-items: center;
+    text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  main header .menu li {
+    width: 15%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  main header .menu li:hover {
+    color: orange;
+    font-weight: bold;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  /* 우측 서치부분 */
+  main header .search {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  main header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  main header .search i {
+    position: relative;
+    right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  main header .login button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  /* 메인 */
+
+  main .mainBox {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* 메인 왼쪽 부분 */
+  main .mainBox .left {
+    width: 75%;
+  }
+
+  /* Main 끝 */
+
+
+
+  /* 슬라이더 */
+
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+  * {
+    box-sizing: border-box
+  }
+
+  .sildeshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: none;
+  }
+
+
+  /* 다음버튼 */
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 1/3 */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  .mySlides {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  /* 슬라이드 끝 */
+
+  /* 작품구매 텍스트 */
+  .purchase1 .portfolio-me {
+    max-width: 100px;
+  }
+
+  .purchase1 .purchase-items p {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-top: 1px;
+    font-family: "Gowun Dodum", sans-serif;
+    padding: 1rem 1rem 1.5rem 1rem;
+    max-width: 10rem;
+  }
+
+  /* 작품구매 텍스트 끝 */
+
+  /* 작품구매창 */
+  .purchase1 section.portfolio .portfolio-inner {
+    width: 265px;
+    float: left;
+    background-color: #f8f8f8;
+    margin-bottom: 4rem;
+    margin-right: 1px;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner #name {
+    font-size: 12px;
+    color: gray;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner #cost {
+    font-size: 18px;
+    color: rgba(0, 89, 255, 0.87);
+  }
+
+  .purchase1 section.portfolio .portfolio-inner:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner img {
+    width: 230px;
+    height: 250px;
+    display: block;
+    transition-duration: 0.3s;
+    overflow: none;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner:hover img {
+    transform: scale(1.1);
+  }
+
+  .purchase1 section.portfolio .portfolio-inner strong {
+    margin: 0.5rem 0;
+    display: block;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner h3 {
+    font-size: 1.75rem;
+  }
+
+
+
+  /* 작품구매창 끝 */
+  .purchase1 .explain .linee {
+    color: blue;
+  }
+}
+
+
+/* 미디어 쿼리 */
+
+@media only all and (min-width: 1500px) {
+  .purchase1 {
+    margin: 20px 150px;
+  }
+
+  /* 슬라이드 크기 */
+  .purchase1 .mySlides {
+    width: 100%;
+    height: 500px;
+  }
+  .purchase1 .mySlides img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .purchase1 .purchase-items p {
+    margin-top: 50px;
+  }
+
+  /* 포트폴리오 아이템 크기 조정 */
+  .purchase1 section.portfolio .portfolio-inner {
+    width: 350px;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner img {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+  .purchase1 {
+    margin: 20px 80px;
+  }
+
+  .purchase1 .mySlides {
+    width: 90%;
+    height: 400px;
+  }
+  .purchase1 .mySlides {
+    width: 90%;
+    height: 400px;
+    
+  }
+
+  .purchase1 section.portfolio .portfolio-inner {
+    width: 300px;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner img {
+    width: 270px;
+    height: 320px;
+  }
+}
+
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .purchase1 {
+    margin: 10px 50px;
+  }
+
+  .purchase1 .mySlides {
+    width: 100%;
+    height: 300px;
+  }
+
+  .purchase1 .mySlides img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner {
+    width: 200px;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner img {
+    width: 180px;
+    height: 220px;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .portfolio-inner {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .purchase1 {
+    margin: 10px 20px;
+  }
+
+  header .top {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .menu_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu_inner li {
+    margin: 10px 0;
+  }
+}

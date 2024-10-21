@@ -1,0 +1,196 @@
+support .container {
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-bottom: 10%;
+}
+
+support .title {
+    font-size: 18px;
+    letter-spacing: -0.6px;
+}
+
+support .title span {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    support .title span {
+        font-size: 35px;
+        font-weight: bold;
+        margin-right: 2%;
+        margin-left: 0%;
+    }
+}
+
+support .title button {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin-left: 15%;
+    padding-right: 1%;
+    cursor: pointer
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    support .title button {
+        margin-left: 2%;
+    }
+}
+
+support .title img {
+    position: absolute;
+    cursor: pointer
+}
+
+support .container .center {
+    position: absolute;
+    width: 580px;
+    margin-top: 22%;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    line-height: 150%;
+    background-color: white;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 3%;
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    support .container .center {
+        position: absolute;
+        width: 620px;
+        margin-top: 40%;
+        margin-left: 1%;
+        margin-right: 3%;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 180%;
+        background-color: white;
+        padding-top: 2%;
+        padding-right: 0%;
+        padding-left: 2%;
+    }
+}
+
+support .container .center span {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: -3.5px;
+
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    support .container .center span {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 180%;
+        letter-spacing: -3.5px;
+    }
+}
+
+support .container .pic {
+    display: flex;
+    width: 100%;
+    height: 651px;
+    margin-top: 3%;
+}
+
+support .container .pic .pic1 {
+    width: 50%;
+    height: 685px;
+    background: url(/Clone/images/support_1.jpg);
+    cursor: pointer
+}
+
+@media screen and (min-width:900px) and (max-width:1600px) {
+    support .container .pic .pic1 {
+        width: 56%;
+        height: 450px;
+        background: url(/Clone/images/support_1.jpg);
+
+        cursor: pointer
+    }
+}
+
+support .container .pic .pic2 {
+    width: 10%;
+    height: 685px;
+    margin-left: 0.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Clone/images/support_2.jpg) center center;
+    cursor: pointer
+}
+
+support .container .pic .pic2 span {
+    display: inline-block;
+    width: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+    margin-top: 30%;
+    margin-left: 38%;
+}
+
+support .container .pic .pic3 {
+    width: 10%;
+    height: 685px;
+    margin-left: 0.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Clone/images/support_3.jpg) center center;
+    cursor: pointer
+}
+
+support .container .pic .pic3 span {
+    display: inline-block;
+    width: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+    margin-top: 30%;
+    margin-left: 38%;
+}
+
+support .container .pic .pic4 {
+    width: 10%;
+    height: 685px;
+    margin-left: 0.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Clone/images/support_4.jpg) center center;
+    cursor: pointer
+}
+
+support .container .pic .pic4 span {
+    display: inline-block;
+    width: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+    margin-top: 30%;
+    margin-left: 38%;
+}
+
+support .container .pic .pic5 {
+    width: 10%;
+    height: 685px;
+    margin-left: 0.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Clone/images/support_5.jpg) center center;
+    cursor: pointer
+}
+
+support .container .pic .pic5 span {
+    display: inline-block;
+    width: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+    margin-top: 30%;
+    margin-left: 38%;
+}

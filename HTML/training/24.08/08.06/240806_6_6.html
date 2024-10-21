@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 CSS 6.4 chapter</title>
+        <style>
+            body{
+                height: 1000px;
+            }
+            .parent{
+                width: 320px;
+                height: 240px;
+                border: 1px solid black;
+                overflow: scroll; /*스크롤*/
+            }
+            .children{
+                height: 2000px;
+                background-image: url(/image/coffee.jpg);
+                background-attachment: local; /* 이미지 스크롤 */
+                /* background-attachment: fixed; 이미지를 웹브라우저에 고정 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">parent
+            <div class="children">children
+        </div>
+    </body>
+</html>

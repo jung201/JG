@@ -1,0 +1,150 @@
+process .main {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(108, 197, 245);
+    z-index: -1;
+    text-align: center;
+}
+
+process .main span {
+    font-size: 145PX;
+    line-height: 60%;
+    letter-spacing: 10px;
+    color: white;
+    opacity: 0.2;
+}
+
+process .container {
+    padding-top: 150px;
+}
+
+process .title {
+    color: white;
+}
+
+process .title span {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 2%;
+    margin-left: 11%;
+}
+
+process .container .pic span {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: -2px;
+
+}
+
+process .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+process .container .pic {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+process .container .pic .pic1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 15px;
+    width: 28%;
+    height: 380px;
+    background: url(/Clone/images/process1.jpg) center center;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+process .container .pic .pic1 span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+}
+
+process .container .pic .pic1 p {
+    display: inline-block;
+    width: 100%;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 115%;
+}
+
+
+
+process .container .pic .pic2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 15px;
+    width: 28%;
+    height: 380px;
+    background: url(/Clone/images/process2.jpg) center center;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+process .container .pic .pic2 span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+}
+
+process .container .pic .pic2 p {
+    display: inline-block;
+    width: 100%;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 115%;
+}
+
+process .container .pic .pic3 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 28%;
+    height: 380px;
+    background: url(/Clone/images/process3.jpg) center center;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+process .container .pic .pic3 span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 115%;
+}
+
+process .container .pic .pic3 p {
+    display: inline-block;
+    width: 100%;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 115%;
+}

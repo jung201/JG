@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/mainpage/detail-pop.css">
+    <link rel="stylesheet" href="../../CSS/purchase/purchasepagedetailpop.css">
+    <title>detail-pop1</title>
+</head>
+
+<body>
+    <div class="detail_Pop">
+
+        <div class="container">
+            <div class="title"> 상품 선택 </div>
+            <div class="discription">
+                <div class="choice">스탠다드 에디션(배송비포함)</div>
+                <ul class="informationList">
+                    <li>한정판 아트북 × 1</li>
+                    <li>[뷰파인더] 사진집 + 목제 사진첩 보관함 × 1</li>
+                </ul>
+            </div>
+
+            <!-- purchaseopopup 화면 시작-->
+            <div class="purchasepopup">
+                <div id="wrap">
+                    <div id="accordian">
+                        <div class="step" id="step1">
+                            <div class="number">
+                                <span>1</span>
+                            </div>
+                            <div class="title">
+                                <h1>유저정보</h1>
+                            </div>
+                        </div>
+
+                        <div class="content" id="email">
+                            <form class="go-right">
+                                <div>
+                                    <input class="box" type="text" placeholder="김덕배">
+                                </div>
+                                <div>
+                                    <input class="box" type="tel" placeholder="010-xxxx-xxxx">
+                                </div>
+                                <div>
+                                    <input class="box" type="text" placeholder="대구 광역시">
+                                </div>
+                                <div>
+                                    <input class="box" type="text" value="" placeholder="대구로 4길 54 멘체스터아파트">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="step" id="step2">
+                            <div class="number">
+                                <span>2</span>
+                            </div>
+                            <div class="title">
+                                <h1>신용카드</h1>
+                            </div>
+                        </div>
+                        <div class="content" id="address">
+                            <form class="go-right">
+                                <div>
+                                    <input class="box" type="name" placeholder=" ex) 0000-0000-0000-0000">
+                                    <div class="credit">
+                                        <input class="box" id="date" placeholder=" ex) 07/21">
+                                        <input class="box" id="cvc" placeholder=" cvc /카드뒷면 3자리">
+                                        <img src="../../img/credit-card-8708087_1280.png" width="200px">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <p class="bub">* 구매약관 </p>
+
+                        <textarea style="resize:none;" id="textarea_id" name="textarea_name">
+                이 표준거래계약서의 제정 목적은 온라인쇼핑몰과 납품업자가 공정한 계약조건에 따라 상품의 납품거래계약을 체결하도록 하기 위한 표준적 계약조건을 제시함에 있습니다.
+이 표준거래계약서에서는 온라인쇼핑몰과 납품업자 사이의 상품 직매입거래에 있어서 표준이 될 계약의 기본적 공통사항만을 제시하였습니다. 따라서 실제 계약을 체결하려는 계약당사자는 이 표준거래계약서의 기본 틀과 내용을 유지하는 범위에서 이 표준거래계약서보다 더 상세한 사항을 계약서에 규정하거나 특약으로 달리 약정할 수 있습니다.
+또한 이 표준거래계약서의 일부 내용은 현행 「대규모유통업에서의 거래 공정화에 관한 법률」 및 그 시행령을 기준으로 한 것이므로 계약당사자는 이들 법령이 개정되는 경우에는 개정내용에 맞도록 기존의 계약을 수정 또는 변경할 수 있으며 특히 개정법령에 강행규정이 추가되는 경우에는 반드시 그 개정규정에 따라 계약내용을 수정하여야 합니다.제1조 [목적]
+
+
+
+이 계약서의 작성 목적은 “갑”과 “을” 간 상품의 직매입거래에서 양 당사자 사이의 기본적인 권리와 의무를 정하기 위함에 있다.
+
+
+
+제2조 [기본원칙]
+
+
+
+① “갑”과 “을”은 상호이익을 존중하고 이 계약상 의무를 신의에 따라 성실히 이행함으로써 상호 공정한 거래관계와 동반성장을 추구한다.
+
+
+
+② “갑”과 “을”은 이 계약의 이행과 관련하여 「대규모유통업에서의 거래 공정화에 관한 법률」 및 그 시행령 등 관련 법령의 규정을 준수한다.
+
+
+
+제3조 [공정거래 준수 및 동반성장 지원]
+
+
+
+“갑”과 “을”은 공정하고 투명한 거래를 위하여 다음 각 호의 내용을 준수한다.
+
+
+
+1. 상대방에게 금품, 향응, 편의 또는 접대를 요구하거나 제공해서는 아니 되며, 위법하거나 부당한 행위를 하지 아니한다.
+
+2. 거래상 우월적 지위를 남용하여 공정한 거래질서에 반하는 행위를 요구하지 아니한다.
+
+3. “갑”은 납품하는 중소기업 사이에 대우의 차별을 두지 않고, 수수료의 수준을 결정하는 과정 등에 합리적이고 공정한 절차를 도입하도록 노력한다.
+
+
+
+제4조 [계약기간]
+
+
+
+①  본 계약의 유효기간은      년   월   일부터      년   월   일까지로 한다. 단, 본 계약기간 만료일 1개월 전까지 당사자가 서면 통지에 의하여 계약 갱신거절의 의사를 표시하지 아니하는 경우, 본 계약은 동일한 조건으로 1년씩 자동으로 연장되는 것으로 한다.
+
+
+
+
+② “갑”은 “을”과 “을”의 납품업자 간 거래에 있어서 불공정거래행위가 지속적으로 발생하고 있음이 객관적으로 확인되는 경우 “을”과의 계약갱신을 거절할 수 있다.
+
+
+
+③ “갑”은 위 ③항을 포함한 “을”과의 계약갱신 거절 기준을 사전에 자신의 홈페이지 등 “을”이 상시 접근 가능한 매체수단에 공지하거나, 계약체결 시 별도의 서면으로 “을”에게 통지하여야 한다. 또한 동 기준이 변경되었을 경우에도 같은 방법으로 “을”에게 즉시 통지하여야 한다.
+
+
+
+④ “갑”이 “을”과의 계약 갱신을 거절하는 경우 계약 기간의 만료일로부터 30일 전까지 “을”에게 계약갱신 거절사유를 구체적으로 적시하여 서면으로 통지하여야 한다.
+
+
+
+⑤ “갑”과 “을”은 본 계약의 기간 만료 및 계약의 해제 또는 해지 후에도 (    )년 동안 다음 각 호에 관한 의무를 부담한다.
+
+1. 지적재산권에 관한 사항
+
+2. 하자책임·보증에 관한 사항
+
+3. 개인정보보호에 관한 사항
+
+
+
+제5조 [상품발주서]
+
+
+
+① “갑”은 [별지]의 상품발주서에 상품의 종류·수량·가격·납품장소·납품기일을 기재하여 “을”에게 상품을 발주한다.
+
+
+
+② “갑”은 상품을 발주하는 즉시 “갑”의 서명(「전자서명법」 제2조제3호에 따른 공인전자서명을 포함한다. 이하 이 계약서에서 같다) 또는 기명날인이 기재된 상품발주서 서면(「전자문서 및 전자거래기본법」 제2조제1호에 따른 전자문서를 포함한다. 이하 이 계약서에서 같다)을 “을”에게 주어야 한다.
+③ “갑”은 상품발주서 외에 이에 준하는 매입전표, 세금계산서 등을 통해 상품을 발주할 수 있으며, 이러한 서면에는 제1항과 제2항에서 필요로 하는 사항이 기재되어야 한다.
+④ “갑”은 상품발주서가 납품기일 이전에 “을”에게 도달하도록 하여야 하며, 상품발주서가 “을”에게 도달하기 이전에 상품을 제조·주문하게 하여서는 아니된다.
+제6조 [검수기준 및 품질검사] ① “을”은 납품하는 상품에 관하여 “갑”의 검수기준에 따른 검수를 받아야 한다.
+② “갑”은 상품의 품질, 규격, 관련 법령의 허용기준 등 “을”이 납품하는 상품에 관한 검수기준을 사전에 “을”에게 서면(「전자문서 및 전자거래기본법」 제2조제1호의 전자문서를 포함한다)으로 명확하게 알려야 한다.
+③ “갑”은 “을”이 납품하는 상품에 대하여 품질검사 및 성분검사가 필요한 경우 “을”에게 해당 검사를 요구할 수 있다. 이 경우 “을”은 공인된 검사기관으로부터 검사를 받은 후 검사결과를 해당 상품의 납품 전에 “갑”에게 제출한다.
+④ 제3항에 따른 검사비용은 “을”이 부담한다. 다만 상품의 특성상 추가적인 공인기관의 검사를 거치지 않더라도 해당 상품의 품질적합 여부가 외관상 뚜렷이 판단될 수 있는 등 처음부터 품질검사 및 성분검사가 필요하지 않았다고 인정될 수 있는 경우에는 그러하지 아니하다.
+⑤ 품질검사 및 성분검사 결과 “을”이 납품한 상품이 법적기준을 충족시키지 못하여 불합격 또는 부적합 판정을 받은 경우 “갑”은 해당 상품의 납품중지 및 상당한 기간을 정하여 시정을 요구할 수 있으며, “을”이 시정요구에 불응할 경우 계약을 해지 또는 해제할 수 있다.
+</textarea>
+                        <div>
+                            <form id="agreementForm">
+                                <label>
+                                    <input type="checkbox" id="agreeCheckbox">
+                                    (필수)약관에 동의합니다.
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form>
+                <div class="cnt">
+                    <input class="cntBtn" type='button' onclick='count("plus")' value='▲' />
+                    <span id='result'>1</span>
+                    <input class="cntBtn" type='button' onclick='count("minus")' value='▼' />
+                </div>
+                <div class="amount">
+                    <span id='totalPrice'>150000 원<span>
+                </div>
+                <div class="payment">
+                    <button id="myButton">결제하기</button>
+                    <p id="message"></p>
+                </div>
+            </form>
+        </div>
+        <script src="../../JS/mainpage/detail-pop1.js"></script>
+</body>
+
+</html>

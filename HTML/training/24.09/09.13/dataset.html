@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataset 속성</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <button data-cnt="5" onclick="controlCnt()" id="bag">가방 구매</button>
+    <button data-cnt="0">신발 구매</button>
+    <script>
+        const buttonEls = document.querySelectorAll("button");
+        buttonEls.forEach((el) => {
+            console.log(el.dataset.cnt);
+        })
+
+        function controlCnt() {
+            const buttonEls = document.querySelectorAll("button");
+            let count = buttonEls[0].dataset.cnt;
+            if (count > 0) {
+                buttonEls[0].dataset.cnt = count - 1;
+                alert(`${buttonEls[0].dataset.cnt} 개 남았습니다.`);
+            } else {
+                alert("더이상 구매할 수 없습니다");
+                document.getElementById("bag").disabld = true;
+                return;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Window 이정규</title>
+    </head>
+    <body>
+        <button onclick="printInfo()">window 객체 속성</button>
+        <script>
+            function printInfo(){
+                console.log(`웹 브라우저의 너비: ${window.innerWidth}`);
+                console.log(`웹 브라우저의 높이: ${window.innerHeight}`);
+                console.log(`웹 브라우저의 창의 너비: ${window.outerWidth}`);
+                console.log(`웹 브라우저의 창의 높이: ${window.outerHeight}`);
+                console.log(`웹 브라우저의 창 위쪽 면과 모니터 사이의 간격: ${window.screenTop}/${window.screenY}`);
+                console.log(`웹 브라우저의 창 왼쪽 면과 모니터 사이의 간격: ${window.screenLeft}/${window.screenX}`);
+                console.log(`웹 브라우저의 창의 스크롤 가로 위치: ${window.scrollX}`);
+                console.log(`웹 브라우저의 창의 스크롤 세로 위치: ${window.scrollY}`);
+            }
+        </script>
+    </body>
+</html>

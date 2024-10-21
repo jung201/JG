@@ -1,0 +1,14 @@
+.flex-container{
+    width: 300px;
+    height: 200px;
+    background-color: #c4c4c4;
+    border: 1px solid black;
+}
+.flex-item{
+    color: white;
+    background-color: #ff5252;
+}
+.flex-item:nth-child(2n){
+    color: white;
+    background-color: #bf5e5e;
+}

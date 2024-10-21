@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 CSS 5.4 chapter 가상클래스 선택자</title>
+        <style>
+            a:link{ /* 한번도 방문한적이 없는 링크*/
+                color:orange
+            }
+            a:visited{ /* 한번이라도 방문한적이 있는 링크*/
+                color:green
+            }
+            /* p:hover{
+                color:red
+            }
+            p:active{
+                color:blueviolet
+            }
+            input:focus{
+                color:red
+            }
+            input:checked + label{
+                color:blue
+            }
+            input:disabled, button:disabled{
+                background-color: #ccc;
+            }
+            input:enabled, button:enabled{
+                background-color:burlywood;
+            }
+            li:first-child{
+                color:red
+            }
+            li:last-child{
+                color:red
+            }
+            p:nth-child(2){
+                color:pink
+            }
+            p:nth-last-child(2){
+                color:blueviolet
+            }
+            p:nth-of-type(1){
+                color:dodgerblue
+            }
+            p:nth-last-of-type(1){
+                color:red
+            } */
+            p:first-of-type{
+                color:aquamarine
+            }
+            p:last-of-type{
+                color:blueviolet
+            }
+        </style>
+    </head>
+    <body>
+        <p>lorem 0</p>
+        <div>
+            <p>lorem 1</p>
+            <span>span 1</span>
+            <p>lorem 2</p>
+        </div>
+        <div>
+            <p>lorem 3</p>
+            <span>span 2</span>
+            <span>span 3</span>
+            <p>lorem 4</p>
+        </div>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <input type="text"><br>
+        <input type="checkbox"><label>checked+label</label> <br>
+        <input type="text" disabled>disabled text <br>
+        <button disabled>버튼 disabled</button><br>
+        <input type="text">enabled text<br>
+        <button>버튼 enabled</button><br>
+        <h1 id="title">전체 선택자</h1>
+        <a href="#">기본 a 태그</a><br>
+        <a href="http://www.google.com">구글 이동</a><br>
+        <a href="http://www.daum.net">다음 이동</a><br>
+        <a href="http://www.naver.com">네이버 이동</a>
+        <p>전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</p>
+        <p>전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</p>
+        <div class="box">
+            <p>전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</p>
+        </div>
+        <div>
+            <p>전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</p>
+            <h2>h2</h2>
+        </div>
+    </body>
+</html>

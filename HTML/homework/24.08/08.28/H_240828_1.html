@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H240828_LJG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            /* background: url(/H_240828_html_이정규/배경.jpg) center center; */
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        input[type="id"],
+        input[type="password"],
+        input[type="name"],
+        input[type="Nikname"] {
+            display: flex;
+            width: 450px;
+            height: 25px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            box-shadow: 5px 5px 10px 5px #4456;
+        }
+
+        textarea {
+            width: 450px;
+            height: 150px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            box-shadow: 5px 5px 10px 5px #4456;
+        }
+
+        input[type="checkbox"] {
+            width: 25px;
+            height: 25px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px 2px #4456;
+        }
+
+        button {
+            font-size: 20px;
+            width: 210px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: transparent;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px 5px #4456;
+        }
+
+        strong {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body background="배경.jpg">
+    <div class="container">
+        <form action="#">
+            <div>
+                <h1><i class="fa-solid fa-clone"></i> Open Membership</>
+                </h1>
+            </div>
+            <div class="main">
+                <div>
+                    <label><input type="id" name="id" placeholder="ID *"></label>
+                </div>
+                <div>
+                    <label><input type="password" name="password" placeholder="Password *"></label>
+                </div>
+                <div>
+                    <label><input type="password" name="password" placeholder="Check password *"></label>
+                </div>
+                <div>
+                    <label><input type="name" name="Nickname" placeholder="Nick name *"></label>
+                </div>
+                <div>
+                    <textarea maxlength="200" placeholder="가입목적을 작성해주세요(200자 이내)"></textarea><br>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="checkbox"><strong>개인정보동의</strong></label>
+                </div>
+                <div>
+                    <button>가입</button>
+                    <button>취소</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

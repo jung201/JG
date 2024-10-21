@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* pagelist 시작  */
+
+.pagelist {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 상단 로고 */
+
+.pagelist header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagelist header .logo_pic {
+  width: 65%;
+  cursor: pointer;
+}
+
+.pagelist header .logo_pic img {
+  width: 50%;
+}
+
+.pagelist header .jlmToBtn {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.pagelist header .jlmToBtn button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.pagelist header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
+.pagelist header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+.pagelist header .scroll .menu {
+  width: 80%;
+}
+
+.pagelist header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+.pagelist header .menu li {
+  width: 18%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.pagelist header .menu li:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+.pagelist .mainComment {
+  width: 100%;
+  display: flex;
+  margin-top: 120px;
+}
+
+.pagelist .mainComment .left {
+  width: 40%;
+  font-size: 20px;
+  padding-left: 100px;
+  line-height: 30px;
+}
+
+.pagelist .mainComment .left span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.pagelist .mainComment .right {
+  width: 50%;
+}
+
+.pagelist .con {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+
+.pagelist .con .subComment {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.pagelist .con .filter {
+  width: 100px;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.pagelist .con .filter:focus {
+  border: 1px solid orange;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: 3px solid #F8E4FF;
+  border-radius: 10px;
+}
+
+.pagelist section .pic_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative
+}
+
+.pagelist section .pic_container .pic_list {
+  width: 100%;
+  display: flex;
+  transition: transform 0.1s ease-in-out;
+}
+
+.pagelist section .pic_container .pic_list .inner {
+  width: 50%;
+  margin: 0px 10px 70px 10px;
+  background-color: #f8f8f8;
+}
+
+/* section pic 사진 */
+.pagelist section .pic_container .pic_list img {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pagelist section .pic_container .pic_list .inner:hover img {
+  transform: scale(1.05);
+}
+
+/* section pic 작가, 제목부분 */
+.pagelist section .pic_container .pic_list .inner .comment {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}
+
+/* section pic 작가부분 */
+.pagelist section .pic_container .pic_list .inner .author {
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* section pic 제목부분 */
+.pagelist section .pic_container .pic_list .inner .title {
+  font-size: 15px;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+/* section pic 제목부분 */
+.pagelist section .pic_container .pic_list .inner .account {
+  font-size: 15px;
+  color: #444141;
+}
+
+/* section pic bar text */
+.pagelist section .pic_container .pic_list .inner .bar_text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagelist section .pic_container .pic_list .inner .bar_text span {
+  font-weight: bold;
+  color: rgb(240, 134, 134);
+  padding-right: 7px;
+}
+
+/* section pic bar */
+.pagelist section .pic_container .pic_list .inner .bar {
+  width: 100%;
+  padding-top: 5px;
+  appearance: none;
+}
+
+.pagelist section .pic_container .pic_list .inner .bar::-webkit-progress-bar {
+  background: #cac8c8;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  height: 10px;
+  overflow: hidden;
+}
+
+.pagelist section .pic_container .pic_list .inner .bar::-webkit-progress-value {
+  background: #f677ed;
+}
+
+.pagelist .explain {
+  margin-top: 100px;
+}
+
+
+
+/* 미디어쿼리 */
+@media only all and (min-width: 1500px) {
+  .pagelist {
+    margin: 20px 150px;
+  }
+
+  /* 상단 로고 */
+  .pagelist header .logo_pic img {
+    position: relative;
+    top: -20px;
+  }
+
+  /* 상단 멘트 */
+
+  .pagelist .mainComment .left {
+    width: 60%;
+    font-size: 25px;
+    padding-left: 300px;
+    line-height: 40px;
+  }
+
+  .pagelist .mainComment .left span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .pagelist .mainComment .right {
+    width: 60%;
+  }
+
+  .pagelist .con {
+    position: relative;
+    top: 70px;
+  }
+
+  .pagelist .con .subComment {
+    position: relative;
+    left: 50px;
+  }
+
+  .pagelist .con .filter {
+    width: 100px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 50px;
+  }
+
+
+  .pagelist section .pic_container {
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner {
+    margin-left: 30px;
+    background-color: #f8f8f8;
+  }
+
+  .pagelist section .pic_container .pic_list img {
+    height: 300px;
+  }
+
+  /* section 멘트 */
+  .pagelist section .pic_container .maindComment {
+    margin-top: 30px;
+  }
+
+  /* section pic */
+  .pagelist section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  /* section pic 작가부분 */
+  .pagelist section .pic_container .pic_list .inner .author {
+    font-size: 16px;
+  }
+
+  /* section pic 제목부분 */
+  .pagelist section .pic_container .pic_list .inner .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* section pic 작품구매 */
+  .pagelist section .pic_container .pic_list .inner .buying {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+}
+
+
+
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+  .pagelist header .search {
+    width: 50%;
+  }
+
+  .pagelist header .scroll .menu {
+    width: 80%;
+  }
+
+  .pagelist header .scroll .menu .menu_inner {
+    width: 130%;
+    height: 70px;
+  }
+
+  .pagelist header .menu li {
+    font-size: 18px;
+  }
+
+  .pagelist header .jlmToBtn {
+    width: 25%;
+  }
+
+  .pagelist header .jlmToBtn button {
+    font-size: 18px;
+  }
+
+  .pagelist .maindComment {
+    font-size: 30px;
+  }
+
+
+  /* section pic 화면구성 */
+  .pagelist section .pic_container {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .title {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .buying {
+    width: 100%;
+  }
+}
+
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .pagelist header .jlmToBtn button {
+    font-size: 16px;
+  }
+
+  .pagelist header .menu li {
+    width: 25%;
+    font-size: 15px;
+  }
+
+  .pagelist header .search {
+    width: 87%;
+    display: flex;
+    align-items: center;
+  }
+
+  .pagelist header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  .pagelist header .search i {
+    right: 20px;
+    font-size: 15px;
+  }
+
+  /* section pic 화면구성 */
+  .pagelist section .pic_container {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .pagelist section .pic_container .pic_list img {
+    height: 180px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .author {
+    font-size: 13px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .title {
+    font-size: 17px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner .buying {
+    width: 100%;
+    font-size: 15px;
+  }
+
+}

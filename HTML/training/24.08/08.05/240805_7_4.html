@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            /* h1 {
+                font-size:16px;
+                font-weight:normal;
+            }
+            p {color:red;}
+            p {color:blue;}
+            p {color:orange;}
+            p {
+                color:blue !important;
+            }
+            #main #sub .title {
+                color:red;
+            } */
+            div{
+                color:red;
+            }
+            p{
+                color:blue !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>전체 선택자</h1>
+        <p>specificity</p>
+        <div id="main">
+            <div id="sub">
+                <p class="title" style="color:green">important</p>
+            </div>
+        </div>
+        <div>
+            <p style="color:red">inherit</p>
+        </div>
+    </body>
+</html>

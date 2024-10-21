@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../css/mainpage/main.css" />
+</head>
+
+<body>
+  <!--main 화면 시작-->
+  <main>
+    <header class="header">
+      <div class="top">
+        <a class="logo_pic" id="logo_picMain" href="../../HTML/mainpage/main.html">
+          <img src="../../img/withDreamLogo2.png" alt="logo">
+        </a>
+        <div class="jlmToBtn">
+          <button type="button" id="joinBtn">Join</button>
+          <button type="button" id="loginBtn">Login</button>
+          <button type="button" id="mypageBtn" style="display:none;">MyPage</button>
+          <button type="button" id="logoutBtn" style="display:none;">Logout</button>
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="menu">
+          <ul class="menu_inner">
+            <li id="ToHome">홈</li>
+            <li id="ToList">펀딩 리스트</li>
+            <li id="Toend">종료 펀딩</li>
+            <li id="Topurchase_1">작품 구매</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="mainBox">
+      <!-- 왼쪽 사진부분  -->
+      <div class="left">
+        <!-- 메인 슬라이더 -->
+        <section>
+          <div class="pic_container">
+            <ul class="pic_slider">
+              <li><img src="../../img/사진38.jpeg" alt="img23" /></li>
+              <li><img src="../../img/사진34.jpeg" alt="img29" /></li>
+              <li><img src="../../img/사진32.jpeg" alt="img25" /></li>
+              <li><img src="../../img/사진33.jpeg" alt="img25" /></li>
+              <li><img src="../../img/사진40.jpg" alt="img25" /></li>
+            </ul>
+          </div>
+        </section>
+        <!-- 서브 슬라이더 -->
+        <div class="subPicComment">주목할 만한 펀딩</div>
+        <sub>
+          <!-- 첫번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li class="list"><img src="../../img/camera-1438003_1280.jpg" alt="img17" /></li>
+              <li class="list"><img src="../../img/camera-1438003_1280.jpg" alt="img13" /></li>
+              <li class="list"><img src="../../img/배경23.png" alt="img14" /></li>
+              <li class="list"><img src="../../img/kayak-5543935_1920.jpg" alt="img18" /></li>
+              <li class="list"><img src="../../img/camera-1438003_1280.jpg" alt="img20" /></li>
+            </ul>
+            <button class="btn1 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn2 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
+          </div>
+          <!-- 두번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li><img src="../../img/배경12.png" alt="img12" /></li>
+              <li><img src="../../img/배경18.jpg" alt="img18" /></li>
+              <li><img src="../../img/배경15.jpg" alt="img15" /></li>
+              <li><img src="../../img/배경20.jpg" alt="img20" /></li>
+              <li><img src="../../img/photographer-407068_1920.jpg" alt="img13" /></li>
+            </ul>
+            <button class="btn3 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn4 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
+          </div>
+          <!-- 세번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li><img src="../../img/배경13.jpg" alt="img13" /></li>
+              <li><img src="../../img/배경1.png" alt="img6" /></li>
+              <li><img src="../../img/배경30.png" alt="img3" /></li>
+              <li><img src="../../img/배경11.jpg" alt="img11" /></li>
+              <li><img src="../../img/kayak-5543935_1920.jpg" alt="img15" /></li>
+            </ul>
+            <button class="btn5 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn6 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
+          </div>
+          <!-- 네번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li><img src="../../img/배경27.png" alt="img6" /></li>
+              <li><img src="../../img/배경20.jpg" alt="img20" /></li>
+              <li><img src="../../img/배경16.jpg" alt="img16" /></li>
+              <li><img src="../../img/배경18.jpg" alt="img18" /></li>
+              <li><img src="../../img/figures-1384865_1920.jpg" alt="img19" /></li>
+            </ul>
+            <button class="btn7 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn8 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
+          </div>
+        </sub>
+      </div>
+      <!-- 최근 등록된 펀딩 -->
+      <div class="right">
+        <div class="title">
+          <p>최근 등록된 펀딩</p>
+          <div id="allPic">전체보기</div>
+        </div>
+
+        <div id="timeDisplay"></div>
+        <div class="pic">
+
+          <div class="rightPic">
+            <img src="../../img/사진37.jpeg" alt="img6" />
+            <div class="num">1</div>
+            <div class="comment">
+              <dl>
+                <dt>humanpicture</dt>
+                <dd>단 하나라도, 낭만 품고 살기 낭만을 찍은 엽서북</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="rightPic">
+            <img src="../../img/사진31.jpeg" alt="img6" />
+            <div class="num">2</div>
+            <div class="comment">
+              <dl>
+                <dt>pinkhuman</dt>
+                <dd>
+                  하루하루가 반복되고 있나요? 어쩌면 우리에게 쉼표가 필요한..
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="rightPic">
+            <img src="../../img/사진36.jpeg" alt="img6" />
+            <div class="num">3</div>
+            <div class="comment">
+              <dl>
+                <dt>human</dt>
+                <dd>
+                  기억하고 싶은 유럽의 찰나가 담긴 엽서북과 마스킹 테이프
+                  [Nostalgia]
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="rightPic">
+            <img src="../../img/사진44.jpeg" alt="img6" />
+            <div class="num">4</div>
+            <div class="comment">
+              <dl>
+                <dt>reack class</dt>
+                <dd>그 동안의 오늘이었던 날들을 간직한 엽서북입니다.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="rightPic">
+            <img src="../../img/사진42.jpg" alt="img6" />
+            <div class="num">5</div>
+            <div class="comment">
+              <dl>
+                <dt>jps</dt>
+                <dd>
+                  초점없는 사진엔 사연이 있다. 흐려진 기록을sdfdsdf 재구성한
+                  필름사진집..
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="otherPicComment">최근 본 프로젝트</div>
+
+    <div class="other_2">
+      <div class="otherTwo">
+        <div class="otherPic_container">
+          <div class="inner">
+            <img src="../../img/사진44.jpeg" alt="img30">
+            <div class="comment">
+              <div class="author">annie chung</div>
+              <div class="title">HOW CAN I FORGET YOU?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="otherPic_container">
+          <div class="inner">
+            <img src="../../img/사진41.jpg" alt="img30">
+            <div class="comment">
+              <div class="author">HB PRESS</div>
+              <div class="title">빛나는 작은 가게들, small store</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="otherPic_container">
+          <div class="inner">
+            <img src="../../img/사진43.jpeg" alt="img28">
+            <div class="comment">
+              <div class="author">repaly</div>
+              <div class="title">필름으로 창조한 우리들만의 세계</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="otherPic_container">
+          <div class="inner">
+            <img src="../../img/사진45.jpeg" alt="img28">
+            <div class="comment">
+              <div class="author">Tory Film</div>
+              <div class="title">같이 찍어요, 토리 필름 카메라</div>
+            </div>
+          </div>
+        </div>
+        <div class="otherTwo">
+          <div class="otherPic_container">
+            <div class="inner">
+              <img src="../../img/사진58.JPG" alt="img30">
+              <div class="comment">
+                <div class="author">Time</div>
+                <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="otherPicComment">이런 펀딩 어때요?</div>
+
+    <div class="other">
+      <div class="otherLeft">
+        <div class="inner">
+          <img src="../../img/집중.png" alt="img18" />
+          <div class="author">시선집중 프로젝트</div>
+          <div class="title">후원자들의 취향이 궁금했다면 주목! 모두의 시선을 사로잡은 보물 같은 프로젝트드을 만나보세요.</div>
+        </div>
+      </div>
+
+      <div class="otherRight">
+        <div class="otherOne">
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_1">
+              <img src="../../img/사진49.jpeg" alt="img30">
+              <div class="comment">
+                <div class="author">annie chung</div>
+                <div class="title">HOW CAN I FORGET YOU?</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_1">
+              <img src="../../img/사진41.jpg" alt="img30">
+              <div class="comment">
+                <div class="author">HB PRESS</div>
+                <div class="title">빛나는 작은 가게들, small store</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_2">
+              <img src="../../img/사진43.jpeg" alt="img28">
+              <div class="comment">
+                <div class="author">repaly</div>
+                <div class="title">필름으로 창조한 우리들만의 세계</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_3">
+              <img src="../../img/사진45.jpeg" alt="img28">
+              <div class="comment">
+                <div class="author">Tory Film</div>
+                <div class="title">같이 찍어요, 토리 필름 카메라</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="otherOne">
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_1">
+              <img src="../../img/사진58.JPG" alt="img30">
+              <div class="comment">
+                <div class="author">Time</div>
+                <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_1">
+              <img src="../../img/사진42.jpg" alt="img30">
+              <div class="comment">
+                <div class="author">Days</div>
+                <div class="title">직접 담은 각 나라의 순간들을 제품으로 구현</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_2">
+              <img src="../../img/가로작품9 (3).jpg" alt="img28">
+              <div class="comment">
+                <div class="author">시선</div>
+                <div class="title">너머의 감정, 엽서북과 포스터</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="otherPic_container">
+            <div class="inner" id="otherPic_3">
+              <img src="../../img/photographer-5353515_1920.jpg" alt="img28">
+              <div class="comment">
+                <div class="author">address</div>
+                <div class="title">당신께 감동을 드립니다.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explain">
+      <hr class="linee" width="100%" color="black">
+      <br><br>
+      <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+        <br><br>
+        이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+      </p>
+      <p class="companyx">
+        직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+        직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+    </div>
+  </main>
+  <!--Main 화면 끝-->
+  <script src="../../js/mainpage/main.js"></script>
+  <script src="../../js/mainpage/common.js"></script>
+</body>
+
+</html>

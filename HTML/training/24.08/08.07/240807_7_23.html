@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 grid</title>
+        <link rel="stylesheet" href="grid-basic.css">
+        <style>
+            .grid-container{
+                width: 500px;
+                height: 500px;
+                display: grid;
+                grid-template-areas: 
+                    "header header header"
+                    "sidebar content content"
+                    "footer footer footer";
+            }
+            #header{
+                grid-area: header;
+            }
+            #sidebar{
+                grid-area: sidebar;
+            }
+            #content{
+                grid-area: content;
+            }
+            #footer{
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div id="header" class="grid-item">header</div>
+            <div id="sidebar" class="grid-item">sidebar</div>
+            <div id="content" class="grid-item">content</div>
+            <div id="footer" class="grid-item">footer</div>
+        </div>
+    </body>
+</html>

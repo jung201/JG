@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>popup 이정규</title>
+        <style>
+            .content {
+                height: 1000px;
+                width: 100%;
+                background: linear-gradient(lightblue, pink);
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="window.close()">팝업 닫기</button>
+        <button onclick="window.scrollToPosition()">scrollTo(100,200)</button>
+        <button onclick="window.scrollByPosition()">scrollBy(100,200)</button>
+        
+        <div class="content"></div>
+        <script>
+            function scrollToPosition() {
+                alert("scrollTo 한번");
+                window.scrollTo(100,200);
+                alert("scrollTo 두번");
+                window.scrollTo(100,200);
+                alert("scrollTo 세번");
+                window.scrollTo(100,200);
+            }
+
+            function scrollByPosition() {
+                alert("scrollBy 한번");
+                window.scrollBy(100,200);
+                alert("scrollBy 두번");
+                window.scrollBy(100,200);
+                alert("scrollBy 세번");
+                window.scrollBy(100,200);
+            }
+        </script>
+    </body>
+</html>

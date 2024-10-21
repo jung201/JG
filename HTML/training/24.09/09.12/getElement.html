@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>요소 노드 선택하기</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1 id="title">타이틀 텍스트 부분</h1>
+        <p class="text">p 태그 이고 text 라는 class 속성값이 있는 첫번째 부분</p>
+        <p class="text">p 태그 이고 text 라는 class 속성값이 있는 두번째 부분</p>
+        <script>
+            // id 속성값이 title인 요소 노드 선택하기
+            const el = document.getElementById("title");
+            console.log('document.getElementById("title") 내용: ');
+            console.log(el);
+            // class 속성값이 text인 요소 노드 모두 선택하기
+            // const classEl = document.getElementsByClassName("text");
+            // console.log('document.getElementsByClassName("text") 내용 : ');
+            // console.log(classEl);
+            // console.log('document.getElementsByClassName("text") 내용 배열로 접근');
+            // console.log(classEl[0]);
+            // console.log(classEl[1]);
+            // console.log('document.getElementsByClassName("text") 내용 for문을 통해 접근');
+            // for(let el of classEl) {
+            //     console.log(el);
+            // }
+            // p 태그에 해당하는 요소 노드 모두 선택하기
+            // const tagEls = document.getElementsByTagName("p");
+            // console.log(tagEls);
+            // console.log(tagEls[0]);
+            // console.log(tagEls[1]);
+            // for(let el of tagEls) {
+            //     console.log(el);
+            // }
+        </script>
+    </body>
+</html>

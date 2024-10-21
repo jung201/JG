@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 속성선택자</title>
+        <style>
+            h1[text] {
+                color:red;
+                background-color: gray;
+            }
+            p[text] {
+                color:blue;
+                background-color: yellow;
+            }
+            h1[text="attr3"] {
+                color:green;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 text="attr1">text 속성 이름 선택자</h1>
+        <h1 text="attr2">text 속성 이름 선택자</h1>
+        <p text="attr3">text 속성 이름 선택자</p>
+        <h1 text="attr3">속성과 속성값 선택자</h1>
+        <p>속성 선택 없음</p>
+    </body>
+</html>

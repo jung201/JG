@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <table border="1" width="300" height="100">
+            <caption>행 통합 테이블</caption>
+            <tr>
+                <th>1행</th>
+                <td>1행 1열</td>
+            </tr>
+                <th rowspan="2">2행</th>
+                <td>2행 1열</td>
+            </tr>
+            <tr>
+                <td colspan="2">3행 2열</td>
+            </tr>
+        </table>
+
+        <table border="1" width="300" height="100">
+            <caption>열 통합 테이블</caption><br>
+            <tr>
+                <th>1행</th>
+                <th colspan="2">2열</th>
+            </tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+            </tr>
+        </table>
+    </body>
+</html>

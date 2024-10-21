@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이정규 css 6.3 chapter</title>
+        <style>
+            .container {
+                width: 300px;
+                height: 200px;
+                overflow: auto;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+            }
+        .background-local {
+            background-image: url(/image/coffee.jpg);
+            background-attachment: local;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            height: 400px; 
+        }
+        .background-scroll {
+            background-image: url(/image/coffee.jpg);
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            height: 400px; 
+        }
+        .content {
+            height: 600px; 
+            background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경을 사용하여 텍스트 가독성 확보 */
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container background-local">
+            <div class="content">
+                <p>이 예제는 배경 이미지가 컨테이너와 함께 스크롤될 때 어떻게 변하는지 보여줍니다. 스크롤을 내려보세요.</p>
+            </div>
+        </div>
+
+        <h2>background-attachment: scroll;</h2>
+        <div class="container background-scroll">
+            <div class="content">
+                <p>이 예제는 배경 이미지가 컨테이너와 함께 움직이지 않고 고정되어 있는 상태를 보여줍니다. 스크롤을 내려보세요.</p>
+            </div>
+        </div>
+    </body>
+</html>

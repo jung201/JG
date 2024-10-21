@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+
+*{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+
+body{
+  padding:0;
+  margin:0;
+  background: white;
+}
+
+.purchasepopup #wrap{
+  width:70%;
+  margin:20px auto;
+  height: 2000px;
+}
+.purchasepopup #accordian{
+  width:80%;
+}
+.purchasepopup #accordian .number{
+  width:50px;
+  height:50px;
+  background:#fff;
+  color:#888;
+  font-size:36px;
+  text-align: center;
+  border-radius:100%;
+  float:left;
+}
+
+.purchasepopup #accordian .step{
+  width:100%;
+  height:63px;
+  background:rgb(52, 99, 255) ;
+  font-family: "Gowun Dodum", sans-serif;
+  color:#FFF;
+  padding-left:1%;
+  padding-top:5px;
+  border-radius: 8px;
+  border-bottom:3px solid #d9d9d9;
+  
+  float:left;
+}
+
+.purchasepopup #accordian .title{
+  float:left;
+  width:80%;
+  height:50px;
+  margin-left:1%;
+  font-size:1em;
+  font-weight:300;
+}
+
+
+.purchasepopup #accordian .title h1{
+  font-size:2em;
+  font-weight:400;
+  margin-top:10px;
+  font-family: "Gowun Dodum", sans-serif;
+
+}
+
+.purchasepopup #accordian .content .box{
+  width: 450px;
+  height: 50px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  text-indent: 10px;
+  outline-color: gray;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.purchasepopup #accordian .content{
+  padding:2em 2em;
+  width:100%;
+  margin:0 auto;
+  background:#FFF;
+  height:auto;
+  display:block;
+  float:left;
+  font-family: "Gowun Dodum", sans-serif;
+}
+.purchasepopup #accordian #textarea_id{
+  width: 100%;
+  height: 120px;
+}
+
+.purchasepopup .check{
+  margin-top: 1.5rem;
+  margin-bottom: 1.0rem;
+}
+
+.purchasepopup .order{
+  width: 100%;
+  height: 55px;
+  border-style: none;
+  border-radius: 9px;
+  color: white;
+  background-color: rgb(52, 99, 255);
+  font-size: 35px;
+  text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
+}
+.purchasepopup .order:hover{
+  background: orange;
+  color: black;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
+/* box-shadow: 0px 5px 0px 0px #000000; */
+
+
+
+
+
+
+
+
