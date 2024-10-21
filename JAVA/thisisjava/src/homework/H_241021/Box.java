@@ -9,20 +9,20 @@ public class Box {
 //	상자의 부피는 12000.0 입니다
 //	====================================
 
-	int a;
-	int b;
-	int c;
+	int width;
+	int vertical;
+	int height;
 
-	int Box1(int a) {
-		return a;
+	int Box1(int width) {
+		return width;
 	}
 
-	int Box2(int b) {
-		return b;
+	int Box2(int vertical ) {
+		return vertical ;
 	}
 
-	int Box3(int c) {
-		return c;
+	int Box3(int height) {
+		return height;
 	}
 
 }
