@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./page1.module.scss";
 
 const MainPage = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [
+    "/img/사진38.jpeg",
+    "/img/사진34.jpeg",
+    "/img/사진32.jpeg",
+    "/img/사진33.jpeg",
+    "/img/사진40.jpg"
+  ];
+
+  useEffect(() => {
+    const totalImages = images.length;
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [images.length]);
+
+
   return (
     <main className={styles.main}>
       <div className={styles.mainBox}>
@@ -10,35 +29,20 @@ const MainPage = () => {
           {/* 메인 슬라이더 */}
           <section className={styles.section}>
             <div className={styles.pic_container}>
-              <ul className={styles.pic_slider}>
-                <li><img src="/img/사진38.jpeg" alt="img23" /></li>
-                <li><img src="/img/사진34.jpeg" alt="img29" /></li>
-                <li><img src="/img/사진32.jpeg" alt="img25" /></li>
-                <li><img src="/img/사진33.jpeg" alt="img25" /></li>
-                <li><img src="/img/사진40.jpg" alt="img25" /></li>
+              <ul className={styles.pic_slider}
+                style={{
+                  transform: `translateX(-${(currentIndex * 100) / images.length}%)`,
+                  width: `${images.length * 100}%`
+                }}
+              >
+                {images.map((image, index) => (
+                  <li key={index} style={{ width: `${100 / images.length}%` }}>
+                    <img src={image} alt={`img${index}`} />
+                  </li>
+                ))}
               </ul>
             </div>
           </section>
-
-          {/* 서브 슬라이더 */}
-          <div className={styles.subPicComment}>주목할 만한 펀딩</div>
-          <sub className={styles.sub}>
-            <div className={styles.pic_container}>
-              <ul className={styles.pic_list}>
-                <li className={styles.list}><img src="/img/camera-1438003_1280.jpg" alt="img17" /></li>
-                <li className={styles.list}><img src="/img/camera-1438003_1280.jpg" alt="img13" /></li>
-                <li className={styles.list}><img src="/img/배경23.png" alt="img14" /></li>
-                <li className={styles.list}><img src="/img/kayak-5543935_1920.jpg" alt="img18" /></li>
-                <li className={styles.list}><img src="/img/camera-1438003_1280.jpg" alt="img20" /></li>
-              </ul>
-              <button className={styles.btn1}>
-                <i className="fa-solid fa-angle-left fa-2x"></i>
-              </button>
-              <button className={styles.btn2}>
-                <i className="fa-solid fa-angle-right fa-2x"></i>
-              </button>
-            </div>
-          </sub>
         </div>
 
         {/* 오른쪽 펀딩 */}
@@ -84,41 +88,6 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className={styles.otherPicComment}>최근 본 프로젝트</div>
-      <div className={styles.other_2}>
-        <div className={styles.otherTwo}>
-          <div className={styles.otherPic_container}>
-            <div className={styles.inner}>
-              <img src="/img/사진44.jpeg" alt="img30" />
-              <div className={styles.comment}>
-                <div className={styles.author}>annie chung</div>
-                <div className={styles.title}>HOW CAN I FORGET YOU?</div>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.otherPic_container}>
-            <div className={styles.inner}>
-              <img src="/img/사진41.jpg" alt="img30" />
-              <div className={styles.comment}>
-                <div className={styles.author}>HB PRESS</div>
-                <div className={styles.title}>빛나는 작은 가게들, small store</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.explain}>
-        <hr className={styles.linee} width="100%" color="black" />
-        <p className={styles.company}>
-          직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
-        </p>
-        <p className={styles.companyx}>
-          직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
-        </p>
       </div>
     </main>
   );
