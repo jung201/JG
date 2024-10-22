@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.main_2 {
+    height: auto;
+    margin: 30px 100px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 서브 코멘트 */
+.main_2 .subPicComment {
+    font-size: 22px;
+    margin: 30px 0px 5px 0px;
+    font-weight: bold;
+}
+
+/* 서브 배열 */
+.main_2 section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* 서브 슬라이드 사진 간격 */
+.main_2 section .pic_container {
+    width: 24%;
+    position: relative;
+}
+
+/* 서브 슬라이드 사진리스트*/
+.main_2 section .pic_container .pic_list {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 서브 슬라이드 사진 */
+.main_2 section .pic_container .pic_list img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* 서브 슬라이드 버튼 */
+.main_2 section button {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(235, 35, 35);
+    cursor: pointer;
+}
+
+/* 서브 슬라이드 왼쪽 버튼 위치 */
+.main_2 section .btn1,
+.main_2 section .btn3,
+.main_2 section .btn5,
+.main_2 section .btn7 {
+    left: 10px;
+}
+
+/* 서브 슬라이드 오른쪽 버튼 위치 */
+.main_2 section .btn2,
+.main_2 section .btn4,
+.main_2 section .btn6,
+.main_2 section .btn8 {
+    right: 10px;
+}
+
+
+@media only all and (min-width: 1500px) {
+
+    /* 서브 배열 */
+    .main_2 section {
+        height: 200px;
+    }
+
+    /* 서브 슬라이드 사진 간격 */
+    .main_2 section .pic_container {
+        height: 200px;
+    }
+
+    /* 서브 슬라이드 사진 */
+    .main_2 section .pic_container .pic_list img {
+        height: 200px;
+    }
+}
