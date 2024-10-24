@@ -1,0 +1,9 @@
+package homework.H_241024.Remocon;
+
+public class TV implements Remocon{
+	
+	public static void main(String[] args) {
+		Remocon r = new TV();
+		r.powerOn();
+	}
+}
