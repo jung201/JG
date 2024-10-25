@@ -1,11 +1,9 @@
-// header.module.scss
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 a,
@@ -19,55 +17,67 @@ li {
   list-style: none;
 }
 
-.header {
+/* Main 시작  */
+
+main {
   height: auto;
   margin: 30px 100px;
-
+  font-family: "Gowun Dodum", sans-serif;
 }
 
-.top {
+/* 상단 로고 */
+
+main header .top {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo_pic {
+main header .logo_pic {
   width: 65%;
 }
 
-.jlmToBtn {
+main header .logo_pic img {
+  width: 50%;
+  cursor: pointer;
+}
+
+main header .jlmToBtn {
   width: 20%;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 
-.jlmToBtn button {
+main header .jlmToBtn button {
   background: transparent;
   outline: none;
   border: none;
   font-size: 25px;
   cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
-.jlmToBtn button:hover {
+main header .jlmToBtn button:hover {
   color: orange;
   font-weight: bold;
 }
 
-.scroll {
+/* nmenu */
+
+main header .scroll {
   width: 100%;
   display: flex;
   border-bottom: 2px solid rgb(184, 181, 181);
   background-color: white;
 }
 
-.menu {
+main header .scroll .menu {
   width: 80%;
 }
 
-.menu_inner {
+main header .scroll .menu .menu_inner {
   width: 100%;
   height: 70px;
   display: flex;
@@ -76,7 +86,7 @@ li {
   text-align: center;
 }
 
-li {
+main header .menu li {
   width: 18%;
   background: transparent;
   border: none;
@@ -84,7 +94,7 @@ li {
   font-size: 22px;
 }
 
-li:hover {
+main header .menu li:hover {
   color: orange;
   font-weight: bold;
 }

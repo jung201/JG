@@ -17,9 +17,11 @@ li {
   list-style: none;
 }
 
+
+/* Main 시작  */
 .main {
   height: auto;
-  margin: 30px 100px;
+  margin: 50px 100px;
   font-family: "Gowun Dodum", sans-serif;
 }
 
@@ -100,7 +102,7 @@ li {
 
 .section {
   width: 100%;
-  height: 470px;
+  height: 650px;
   border-radius: 5px;
   margin: 0px 0px 20px;
   overflow: hidden;
@@ -142,7 +144,7 @@ li {
 
 .pic_slider li img {
   width: 100%;
-  height: 500px;
+  height: 650px;
   flex-shrink: 0;
   background-size: cover;
 }

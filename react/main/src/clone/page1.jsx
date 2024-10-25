@@ -86,6 +86,26 @@ const Page1 = () => {
                 </dl>
               </div>
             </div>
+            <div className={styles1.rightPic}>
+              <img src="/img/사진38.jpeg" alt="img6" />
+              <div className={styles1.num}>4</div>
+              <div className={styles1.comment}>
+                <dl>
+                  <dt>human</dt>
+                  <dd>기억하고 싶은 유럽의 찰나가 담긴 엽서북과 마스킹 테이프 [Nostalgia]</dd>
+                </dl>
+              </div>
+            </div>
+            <div className={styles1.rightPic}>
+              <img src="/img/사진44.jpeg" alt="img6" />
+              <div className={styles1.num}>5</div>
+              <div className={styles1.comment}>
+                <dl>
+                  <dt>human</dt>
+                  <dd>기억하고 싶은 유럽의 찰나가 담긴 엽서북과 마스킹 테이프 [Nostalgia]</dd>
+                </dl>
+              </div>
+            </div>
           </div>
         </div>
       </div>

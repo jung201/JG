@@ -103,7 +103,7 @@ main header .menu li:hover {
 
 main .mainBox {
   width: 100%;
-  margin-top: 30px;
+  margin: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -188,7 +188,7 @@ main sub {
 }
 
 /* 서브 슬라이드 사진 간격 */
-main sub div {
+main sub div .pic_container {
   width: 24%;
   position: relative;
 }
