@@ -1,6 +1,6 @@
 package test;
 
-// import java.util.Iterator;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -13,12 +13,13 @@ public class Main {
 		int count = 0; // 아웃 카운팅
 
 		for (int i = 0; i < 2; i++) {
-			for (int j = 0; j < batsman.length; j++) { // 선수 순서
+			for (int j= 0; j < batsman.length; j++) { // 선수 순서
 				int pitcher = (int) (Math.random() * 10) + 1; // 투수 랜덤 숫자
 				System.out.println("> 투수가 공을 던집니다");
-				System.out.print("> " + (j + 1) + "번 타자가 공을 칩니다 : ");
+				System.out.print("> " + (j+1) + "번 타자가 공을 칩니다 : ");
 				hit = sc.nextInt();
-				System.out.println("> 투수 공 : " + pitcher);
+				System.out.println("> 투수 공 : " +pitcher);
+				
 
 				if (hit == 0 || hit > 10) { // 사용자 입력이 0 이거나 10 이상일 경우
 					System.out.println("\n==입력 값을 확인해주세요==\n==기회가 넘어갑니다==\n");

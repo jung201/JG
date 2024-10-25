@@ -9,5 +9,10 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.SignerOutputStream"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="ch09.sec02.exma01.A.B"/>
+    <fullyQualifiedTypeName name="ch09.sec03.exma01.A.B"/>
     <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
+    <fullyQualifiedTypeName name="ch09.sec06.exma03.Button.ClickListener"/>
+    <fullyQualifiedTypeName name="ch09.sec07.exam02.Home"/>
+    <fullyQualifiedTypeName name="pack2.B"/>
 </qualifiedTypeNameHistroy>

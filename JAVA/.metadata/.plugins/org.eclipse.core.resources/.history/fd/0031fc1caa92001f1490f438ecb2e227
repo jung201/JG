@@ -1,0 +1,16 @@
+package homework.H_241025.Integer_4;
+
+
+public class Integer {
+    public static void main(String[] args) {
+        try {
+            int num = Integer.parseInt("ABC"); // 예외가 발생하는 부분
+            System.out.println("변환된 숫자: " + num);
+        } catch (NumberFormatException n) { // 예외를 처리하는 catch 블록
+            System.out.println("NumberFormatException 발생: 숫자로 변환할 수 없는 문자열입니다.");
+        } finally {
+            System.out.println("프로그램 종료");
+        }
+    }
+}
+
