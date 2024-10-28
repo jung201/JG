@@ -1,4 +1,4 @@
-package Main;
+package app;
 
 public class InputErrorException extends Exception {
     private String message;

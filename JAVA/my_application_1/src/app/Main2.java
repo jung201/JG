@@ -1,4 +1,4 @@
-package ch11.sec03.exam01;
+package app;
 
 import java.util.Scanner;
 
