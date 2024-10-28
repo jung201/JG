@@ -4,15 +4,7 @@ public class ChildExample {
 
 	public static void main(String[] args) {
 		Child child = new Child();
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		// 작성결과
 		// 1. "Parent() call"
