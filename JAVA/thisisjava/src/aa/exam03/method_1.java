@@ -1,4 +1,4 @@
-package AA.exam03;
+package aa.exam03;
 
 // 클래스의 외부에서 메서드 호출
 

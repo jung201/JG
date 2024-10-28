@@ -1,4 +1,4 @@
-package AA.exam01;
+package aa.exam01;
 
 // #1. 클래스의 구성 ( 정의 ) : 붕어빵 기계
 class AA {

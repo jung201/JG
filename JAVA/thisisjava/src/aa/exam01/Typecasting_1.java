@@ -1,4 +1,4 @@
-package AA.exam01;
+package aa.exam01;
 
 class A {
     int m = 3;

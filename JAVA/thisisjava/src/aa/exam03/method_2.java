@@ -1,4 +1,4 @@
-package AA.exam03;
+package aa.exam03;
 
 public class method_2 {
     public static void main(String[] args) {

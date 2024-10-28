@@ -1,4 +1,4 @@
-package AA.exam04;
+package aa.exam04;
 
 import java.util.Arrays;
 

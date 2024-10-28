@@ -1,4 +1,4 @@
-package AA.exam02;
+package aa.exam02;
 
 // #1. 클래스 생성 ( 정의 )
 class AA {

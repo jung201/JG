@@ -1,4 +1,4 @@
-package AA.exam02;
+package aa.exam02;
 
 // 필드와 지역변수의 구분
 // #1. 클래스를 생성
