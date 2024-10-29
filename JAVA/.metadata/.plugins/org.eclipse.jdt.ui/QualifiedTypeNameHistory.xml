@@ -15,5 +15,9 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+=======
+    <fullyQualifiedTypeName name="aa.exam07.common.A"/>
+>>>>>>> b459aec12c444e1a84e42af7b1c4219d77287d40
 </qualifiedTypeNameHistroy>
