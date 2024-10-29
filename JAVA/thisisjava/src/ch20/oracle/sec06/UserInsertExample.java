@@ -14,12 +14,12 @@ public class UserInsertExample {
 
 			// 연결하기
 			conn = DriverManager.getConnection(
-					"jdbc:oracle:thin@localhost:1521/XE",
+					"jdbc:oracle:thin:@localhost:1521/XE",
 					"c##human", 
 					"human"
 					);
 			// 매개변수화된 SQL 문 작성
-			String sql = "" + "INSERT INTO users ( userid, username, userpassword, userage, usermail) "
+			String sql = "" + "INSERT INTO users ( userid, username, userpassword, userage, useremail ) "
 					+ "VALUES ( ?, ?, ?, ?, ?)";
 
 			// PreparedStatement 얻기 및 값 지정
@@ -45,8 +45,7 @@ public class UserInsertExample {
 				try {
 					// 연결 끊기
 					conn.close();
-				} catch (SQLException e) {
-				}
+				} catch (SQLException e) {}
 			}
 		}
 	}
